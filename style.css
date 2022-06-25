@@ -1,0 +1,997 @@
+@font-face {
+    font-family: "OpenSans-SemiBold";
+    src: url("./OpenSans-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url("./OpenSans-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "OpenSans-SemiBold";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #363945;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.homeBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+}
+
+#homeBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border: solid 1px grey;
+    border-radius: 50%;
+    box-shadow: 0 0 4px 1px grey;
+}
+
+.initials{
+    font-size: 2rem;
+}
+
+.house {
+    font-size: 2.4rem;
+    
+}
+
+.hide {
+    display: none;
+}
+
+
+.cv {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    margin-left: 20px;
+}
+
+.cv > a{
+    text-decoration: none;
+    color: black;
+}
+
+.cv > i{
+    font-size: 1rem;
+}
+
+.cv:hover {
+    margin-bottom: 3px;
+    box-shadow: 0 2px 6px 0;
+}
+
+.cv:active {
+    margin-bottom: 0;
+    box-shadow: none;
+}
+
+.cv>span {
+    margin-right: 3px;
+}
+
+.scrollTo {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+
+.scrollIcons {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-left: 30px;
+}
+
+.topbarScrollTo {
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.topbarScrollTo:hover {
+    color: #0074D9;
+}
+
+.download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+
+.contactIcons {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.contactIcons > a{
+    text-decoration: none;
+    color: white;
+}
+
+.icon {
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+
+.linkedin:hover {
+    color: #0074D9;
+    margin-bottom: 5px;
+}
+.linkedin:active {
+    margin-bottom: 0;
+}
+
+.whatsapp:hover {
+    color: rgb(138, 212, 26);
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+.whatsapp:active {
+    margin-bottom: 0;
+}
+
+.github:hover {
+    color: purple;
+    margin-bottom: 5px;
+}
+
+.github:active {
+    margin-bottom: 0;
+}
+
+.email:hover {
+    color: black;
+    margin-bottom: 5px;
+}
+
+.email:active {
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+/* Topbar ends here !!! */
+
+
+
+
+
+
+
+
+
+
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 4rem;
+}
+
+.name {
+    font-style: italic;
+    color: #0074D9;
+}
+
+.scroll {
+    box-shadow: rgba(35, 52, 66, 0.4) 0 2px 4px, rgba(35, 49, 66, 0.3) 0 7px 13px -3px, rgba(58, 79, 111, 0.5) 0 -3px 0 inset;
+    background-image: radial-gradient(100% 100% at 100% 0, #5ad9ff 0, #1a64c4 100%);
+    border: 0;
+    align-items: center;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    height: 48px;
+    padding-left: 16px;
+    padding-right: 16px;
+    transition: box-shadow .15s, transform .15s;
+    font-size: 1.1rem;
+}
+
+.scroll:hover {
+    box-shadow: rgba(35, 56, 66, 0.4) 0 4px 8px, rgba(35, 57, 66, 0.3) 0 7px 13px -3px, rgb(60, 191, 224)0 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.scroll:active {
+    box-shadow: #3c83e0 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.scroll:focus {
+    box-shadow: #1d4074 0 0 0 1.5px inset, rgba(35, 52, 66, 0.4) 0 2px 4px, rgba(46, 75, 92, 0.3) 0 7px 13px -3px, #235da0 0 -3px 0 inset;
+}
+
+
+.fa-circle-chevron-down {
+    position: absolute;
+    margin-top: 500px;
+    color: #363945;
+}
+
+.fa-circle-chevron-down:hover {
+    margin-bottom: 10px;
+    box-shadow: 0px 3px 4px 0px grey;
+    border-radius: 50px;
+}
+
+.fa-circle-chevron-down:active {
+    box-shadow: none;
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+/* Home section ends here !!! */
+
+
+
+
+
+
+
+
+
+
+
+.aboutBox {
+    background-image: radial-gradient(100% 100% at 100% 0, #5ad9ff 0, #1a64c4 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    font-size: 2rem;
+    text-shadow: 2px 2px 2px black;
+}
+
+.aboutImg {
+    box-shadow: 0 0 5px 2px white;
+    border-radius: 50%;
+    margin: 100px;
+}
+
+.aboutDescription {
+    display: flex;
+    align-items: center;
+    width: 80%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* About section ends here !!! */
+
+
+
+
+
+
+
+
+
+
+
+
+.skillsBox {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+
+.techIcons {
+    display: flex;
+    flex-direction: column;
+}
+
+.lineOne {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.iconBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+    font-size: 2rem;
+}
+
+.skillIcon {
+    width: 80px;
+}
+
+
+
+
+
+
+
+
+
+/* Skills section ends here !!! */
+
+
+
+
+
+
+
+
+
+
+
+
+.projectContainer {
+    background-image: radial-gradient(100% 100% at 100% 0, #5ad9ff 0, #1a64c4 100%);
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 80px;
+}
+
+.projectDescription>h4 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 5px;
+}
+
+.allProjects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.project {
+    border: solid 1px black;
+    padding: 20px;
+    width: 410px;
+    margin: 20px;
+}
+
+.project:hover {
+    border: solid 1px white;
+
+}
+
+.projectImg>img {
+    border-radius: 10px;
+}
+
+.demo {
+    box-shadow: rgb(11, 16, 20) 0 2px 4px, rgba(13, 18, 24, 0.3) 0 7px 13px -3px, rgba(45, 63, 90, 0.5) 0 -3px 0 inset;
+    background-image: radial-gradient(100% 100% at 100% 0, #d6d2d2 0, #161414 100%);
+    border: 0;
+    align-items: center;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    height: 42px;
+    padding-left: 12px;
+    padding-right: 12px;
+    transition: box-shadow .15s, transform .15s;
+    font-size: .9rem;
+}
+
+.demo:hover {
+    box-shadow: rgba(35, 56, 66, 0.4) 0 4px 8px, rgba(35, 57, 66, 0.3) 0 7px 13px -3px, rgb(164, 185, 190)0 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.demo:active {
+    box-shadow: #0b1725 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.demo:focus {
+    box-shadow: #111c2c 0 0 0 1.5px inset, rgba(45, 57, 66, 0.4) 0 2px 4px, rgba(46, 75, 92, 0.3) 0 7px 13px -3px, #1c2530 0 -3px 0 inset;
+}
+
+.gh {
+    box-shadow: rgb(11, 16, 20) 0 2px 4px, rgba(13, 18, 24, 0.3) 0 7px 13px -3px, rgba(45, 63, 90, 0.5) 0 -3px 0 inset;
+    background-image: radial-gradient(100% 100% at 100% 0, #d6d2d2 0, #161414 100%);
+    border: 0;
+    align-items: center;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    height: 42px;
+    padding-left: 12px;
+    padding-right: 12px;
+    transition: box-shadow .15s, transform .15s;
+    font-size: .9rem;
+}
+
+.gh:hover {
+    box-shadow: rgba(35, 56, 66, 0.4) 0 4px 8px, rgba(35, 57, 66, 0.3) 0 7px 13px -3px, rgb(164, 185, 190)0 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.gh:active {
+    box-shadow: #0b1725 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.gh:focus {
+    box-shadow: #111c2c 0 0 0 1.5px inset, rgba(45, 57, 66, 0.4) 0 2px 4px, rgba(46, 75, 92, 0.3) 0 7px 13px -3px, #1c2530 0 -3px 0 inset;
+}
+
+.demo>a {
+    text-decoration: none;
+    color: white;
+}
+
+.gh>a {
+    text-decoration: none;
+    color: white;
+}
+
+.projectBtns {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 25px auto;
+}
+
+.projectDescription {
+    font-family: "OpenSans-Regular";
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Product section ends here !!! */
+
+
+
+
+
+
+
+
+
+
+
+
+.contact {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.mailBox {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+
+.sendName,
+.sendMail,
+.sendMessage {
+    font-size: 1.5rem;
+    padding: 15px;
+    margin: 10px;
+    width: 700px;
+    outline: none;
+    border-radius: 10px;
+    border: solid 1px grey;
+}
+
+.sendName:focus,
+.sendMail:focus,
+.sendMessage:focus {
+    box-shadow: 0 0 4px 1px #0074D9;
+}
+
+
+.send {
+    width: 100px;
+    box-shadow: rgba(35, 52, 66, 0.4) 0 2px 4px, rgba(35, 49, 66, 0.3) 0 7px 13px -3px, rgba(58, 79, 111, 0.5) 0 -3px 0 inset;
+    background-image: radial-gradient(100% 100% at 100% 0, #5ad9ff 0, #1a64c4 100%);
+    border: 0;
+    align-items: center;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    height: 48px;
+    padding-left: 16px;
+    padding-right: 16px;
+    transition: box-shadow .15s, transform .15s;
+    font-size: 1.1rem;
+}
+
+.send:hover {
+    box-shadow: rgba(35, 56, 66, 0.4) 0 4px 8px, rgba(35, 57, 66, 0.3) 0 7px 13px -3px, rgb(60, 191, 224)0 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.send:active {
+    box-shadow: #3c83e0 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+
+
+
+
+
+
+/* Contact section ends here !!! */
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #363945;
+    height: 35vh;
+}
+
+.fa-circle-chevron-up {
+    width: 60px;
+}
+
+.fa-circle-chevron-up {
+    color: white;
+    font-size: 4rem;
+    height: 65px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.upArrow {
+    height: 100px;
+}
+
+.fa-circle-chevron-up:hover {
+    margin-top: 5px;
+    box-shadow: 2px 2px 4px 0px grey;
+
+}
+
+.fa-circle-chevron-up:active {
+    box-shadow: none;
+    margin: 10px;
+}
+
+
+.footerIcons {
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.footerIcon {
+    margin-left: 25px;
+    margin-right: 25px;
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+}
+
+.footerIcons > a{
+    text-decoration: none;
+}
+
+.footerIcon:hover {
+    margin-bottom: 5px;
+
+}
+
+.footerIcon:active {
+    margin-bottom: 0;
+}
+
+.footerLinkedin:hover {
+    color: #0074D9;
+}
+
+.footerWhatsapp:hover {
+    color: greenyellow;
+}
+
+.footerGithub:hover {
+    color: purple;
+}
+
+.footerEmail:hover {
+    color: black;
+}
+
+
+
+
+
+
+
+/* Footer section ends here !!! */
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1600px) {
+
+    .aboutBox {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .aboutImg {
+        width: 250px;
+        margin: 50px 50px 0 0;
+    }
+
+    .allProjects {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (max-width:1200px) {
+
+    .aboutBox {
+        font-size: 1.1rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .lineOne {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+
+    .aboutImg {
+        width: 200px;
+        margin: 50px 50px 0 0;
+    }
+
+}
+
+@media (max-width:1000px) {
+
+    .cv {
+        padding: 7px;
+    }
+
+    .scrollTo {
+        margin-left: 20px;
+        font-size: .8rem;
+    }
+
+    .scrollIcons {
+        display: flex;
+        height: 50px;
+        margin-left: 20px;
+    }
+
+    .topbarScrollTo {
+        padding: 5px;
+        margin: 5px;
+        cursor: pointer;
+    }
+
+    .icon {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 1.5rem;
+    }
+
+
+    .home {
+        font-size: 2.5rem;
+    }
+
+    .down{
+        font-size: 4rem;
+    }
+    
+
+    .aboutBox {
+        font-size: 1.4rem;
+    }
+
+    .aboutImg {
+        width: 200px;
+        margin: 0 0 50px 0;
+    }
+
+    .aboutDescription {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+
+    .iconBlock {
+        font-size: 1.2rem;
+    }
+
+    .skillIcon {
+        width: 60px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .allProjects {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width:800px) {
+
+    #homeBtn {
+        display: none;
+    }
+
+   .download{
+    margin-left: -70px;
+
+   }
+
+    .lineOne {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .cv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    .scrollTo {
+        margin-left: 0;
+        font-size: .7rem;
+    }
+
+    .scrollIcons {
+        margin: 0px;
+    }
+
+    .icon {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 1.2rem;
+    }
+
+    .home {
+        font-size: 2rem;
+    }
+
+    .scroll {
+        height: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+        transition: box-shadow .15s, transform .15s;
+        font-size: .9rem;
+    }
+
+    .aboutBox {
+        font-size: 1.2rem;
+    }
+
+    .iconBlock {
+        font-size: 1rem;
+    }
+
+    .skillIcon {
+        width: 40px;
+    }
+
+
+    .sendName,
+    .sendMail,
+    .sendMessage {
+        width: 400px;
+    }
+
+}
+
+
+
+@media (max-width:600px) {
+    .cv {
+        margin: 0;
+        position: absolute;
+        right: 20px;
+    }
+
+    .contactIcons {
+        display: none;
+    }
+
+    .home {
+        font-size: 1.5rem;
+    }
+
+    .scroll {
+        height: 30px;
+        padding-left: 5px;
+        padding-right: 5px;
+        transition: box-shadow .15s, transform .15s;
+        font-size: .7rem;
+    }
+
+    .aboutBox {
+        display: flex;
+        height: 100vh;
+        font-size: .9rem;
+
+    }
+
+
+    .aboutImg {
+        margin-bottom: 5ppxx;
+    }
+
+    .aboutDescription {
+        margin-bottom: 100px;
+    }
+
+
+
+    .lineOne {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .project {
+        border: solid 1px white;
+        padding: 20px;
+        width: 250px;
+        margin: 20px;
+    }
+
+    .projectImg>img {
+        width: 250px;
+    }
+
+    .iconBlock {
+        font-size: .8rem;
+    }
+
+    .skillIcon {
+        width: 30px;
+    }
+
+    .demo {
+        height: 32px;
+        padding-left: 8px;
+        padding-right: 8px;
+        font-size: .7rem;
+    }
+
+    .gh {
+        height: 32px;
+        padding-left: 8px;
+        padding-right: 8px;
+        font-size: .7rem;
+    }
+
+
+    .sendName,
+    .sendMail,
+    .sendMessage {
+        width: 250px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+}
