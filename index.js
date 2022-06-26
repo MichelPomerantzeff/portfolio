@@ -50,16 +50,15 @@ topbarContact.addEventListener("click", () => {
 })
 
 
+
+// Change HOME BUTTON to from MP to HOME icon and vise-versa on mouse hover
 const homeBtn = document.querySelector('#homeBtn')
 const house = document.querySelector('.house')
 const initials = document.querySelector('.initials')
 
-
-
 homeBtn.addEventListener("mouseenter", () => {
     initials.classList.add("hide")
     house.classList.add("fa-house")
-    
 })
 
 homeBtn.addEventListener("mouseleave", () => {
@@ -68,9 +67,10 @@ homeBtn.addEventListener("mouseleave", () => {
 })
 
 
+
+// Scroll the page to the very bottom
 const home = document.querySelector(".home")
 const upArrow = document.querySelector(".upArrow")
-
 
 upArrow.addEventListener("click", () => {
     home.scrollIntoView({ behavior: "smooth", block: "center" })
@@ -79,6 +79,8 @@ homeBtn.addEventListener("click", () => {
     home.scrollIntoView({ behavior: "smooth", block: "center" })
 })
 
+
+// Scroll the page to the very top
 const footer = document.querySelector("footer")
 const down = document.querySelector(".down")
 

@@ -17,6 +17,10 @@ body {
     font-family: "OpenSans-SemiBold";
 }
 
+h1 {
+    font-size: 4rem;
+    margin: 80px;
+}
 
 
 
@@ -27,7 +31,7 @@ body {
 
 
 
-
+/* Topbar starts here !!! */
 .topbar {
     display: flex;
     justify-content: space-between;
@@ -38,6 +42,12 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+}
+
+.scrollTo {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
 }
 
 .homeBtn {
@@ -55,9 +65,19 @@ body {
     align-items: center;
     width: 70px;
     height: 70px;
-    border: solid 1px grey;
     border-radius: 50%;
-    box-shadow: 0 0 4px 1px grey;
+    box-shadow: 0 0 2px 1px grey;
+}
+
+#homeBtn:hover {
+    box-shadow: 0 1px 2px 2px grey;
+    margin-bottom: 5px;
+    transition: .1s;
+}
+
+#homeBtn:active {
+    box-shadow: 0 0 2px 1px grey;
+    margin-bottom: 0px;
 }
 
 .initials{
@@ -65,15 +85,20 @@ body {
 }
 
 .house {
-    font-size: 2.4rem;
-    
+    font-size: 2.4rem;   
 }
 
 .hide {
     display: none;
 }
 
-
+.downloadBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+ 
 .cv {
     background-color: #fff;
     border-radius: 10px;
@@ -81,6 +106,8 @@ body {
     border: none;
     outline: none;
     margin-left: 20px;
+    border: solid 1px grey;
+
 }
 
 .cv > a{
@@ -93,25 +120,20 @@ body {
 }
 
 .cv:hover {
-    margin-bottom: 3px;
-    box-shadow: 0 2px 6px 0;
+    margin-bottom: 5px;
+    box-shadow: 0 1px 2px 0 white;
+
 }
 
 .cv:active {
     margin-bottom: 0;
     box-shadow: none;
+    transition: .1s;
 }
 
 .cv>span {
     margin-right: 3px;
 }
-
-.scrollTo {
-    display: flex;
-    align-items: center;
-    margin-left: 20px;
-}
-
 
 .scrollIcons {
     display: flex;
@@ -129,14 +151,6 @@ body {
 .topbarScrollTo:hover {
     color: #0074D9;
 }
-
-.download {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-}
-
 
 .contactIcons {
     display: flex;
@@ -191,13 +205,6 @@ body {
 .email:active {
     margin-bottom: 0;
 }
-
-
-
-
-
-
-
 /* Topbar ends here !!! */
 
 
@@ -210,6 +217,8 @@ body {
 
 
 
+
+/* HOME SECTION STARTS HERE !!! */
 .home {
     display: flex;
     flex-direction: column;
@@ -271,15 +280,9 @@ body {
     margin-bottom: 0;
 }
 
+/* HOME SECTION ENDS HERE !!! */
 
 
-
-
-
-
-
-
-/* Home section ends here !!! */
 
 
 
@@ -290,6 +293,9 @@ body {
 
 
 
+
+
+/* ABOUT SECTION STARTS HERE !!! */
 
 .aboutBox {
     background-image: radial-gradient(100% 100% at 100% 0, #5ad9ff 0, #1a64c4 100%);
@@ -303,12 +309,6 @@ body {
     text-shadow: 2px 2px 2px black;
 }
 
-.aboutImg {
-    box-shadow: 0 0 5px 2px white;
-    border-radius: 50%;
-    margin: 100px;
-}
-
 .aboutDescription {
     display: flex;
     align-items: center;
@@ -316,6 +316,12 @@ body {
 
 }
 
+.aboutImg {
+    box-shadow: 0 0 5px 2px white;
+    border-radius: 50%;
+    margin: 100px;
+}
+/* ABOUT SECTION ENDS HERE !!! */
 
 
 
@@ -326,17 +332,8 @@ body {
 
 
 
-/* About section ends here !!! */
 
-
-
-
-
-
-
-
-
-
+/* SKILLS SECTION STARTS HERE !!! */
 
 
 .skillsBox {
@@ -348,12 +345,12 @@ body {
     height: 100vh;
 }
 
-.techIcons {
+.skillsDescription {
     display: flex;
     flex-direction: column;
 }
 
-.lineOne {
+.techIcons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
@@ -370,15 +367,10 @@ body {
     width: 80px;
 }
 
+/* SKILLS SECTION ENDS HERE !!! */
 
 
 
-
-
-
-
-
-/* Skills section ends here !!! */
 
 
 
@@ -389,27 +381,17 @@ body {
 
 
 
+/* PROJECTS SECTION STARTS HERE !!! */
 
 
 .projectContainer {
     background-image: radial-gradient(100% 100% at 100% 0, #5ad9ff 0, #1a64c4 100%);
     color: white;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 1px 0 1px grey;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-h1 {
-    font-size: 4rem;
-    margin: 80px;
-}
-
-.projectDescription>h4 {
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 5px;
 }
 
 .allProjects {
@@ -419,19 +401,23 @@ h1 {
 }
 
 .project {
-    border: solid 1px black;
-    padding: 20px;
-    width: 410px;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    width: 500px;
     margin: 20px;
 }
 
-.project:hover {
-    border: solid 1px white;
-
+.projectImg>img {
+    width: 500px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
-.projectImg>img {
-    border-radius: 10px;
+.projectBtns {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 25px auto;
 }
 
 .demo {
@@ -502,17 +488,28 @@ h1 {
     color: white;
 }
 
-.projectBtns {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 25px auto;
+.projectDescription>h4 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 5px;
 }
 
 .projectDescription {
     font-family: "OpenSans-Regular";
-
 }
 
+.descriptionTop{
+    margin-left: 20px;
+}
+
+.descriptionField{
+    background-color: rgba(158, 153, 153, 0.267);
+    margin: 2px 10px 10px 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* PROJECTS SECTION ENDS HERE !!! */
 
 
 
@@ -523,17 +520,9 @@ h1 {
 
 
 
-/* Product section ends here !!! */
 
 
-
-
-
-
-
-
-
-
+/* CONTACTS SECTION STARTS HERE !!! */
 
 
 .contact {
@@ -545,9 +534,6 @@ h1 {
     height: 100vh;
 }
 
-h1 {
-    font-size: 4rem;
-}
 
 .mailBox {
     display: flex;
@@ -555,9 +541,7 @@ h1 {
     margin: 50px;
 }
 
-.sendName,
-.sendMail,
-.sendMessage {
+.emailInput {
     font-size: 1.5rem;
     padding: 15px;
     margin: 10px;
@@ -567,9 +551,9 @@ h1 {
     border: solid 1px grey;
 }
 
-.sendName:focus,
-.sendMail:focus,
-.sendMessage:focus {
+.emailInput:focus,
+.emailInput:focus,
+.emailInput:focus {
     box-shadow: 0 0 4px 1px #0074D9;
 }
 
@@ -600,13 +584,7 @@ h1 {
     transform: translateY(2px);
 }
 
-
-
-
-
-
-
-/* Contact section ends here !!! */
+/* CONTACTS SECTION ENDS HERE !!! */
 
 
 
@@ -616,6 +594,11 @@ h1 {
 
 
 
+
+
+
+
+/* FOOTER SECTION STARTS HERE !!! */
 
 
 footer {
@@ -627,20 +610,17 @@ footer {
     height: 35vh;
 }
 
-.fa-circle-chevron-up {
-    width: 60px;
+.upArrow {
+    height: 100px;
 }
 
 .fa-circle-chevron-up {
+    width: 60px;
     color: white;
     font-size: 4rem;
     height: 65px;
     margin: 10px;
     border-radius: 50%;
-}
-
-.upArrow {
-    height: 100px;
 }
 
 .fa-circle-chevron-up:hover {
@@ -698,13 +678,7 @@ footer {
     color: black;
 }
 
-
-
-
-
-
-
-/* Footer section ends here !!! */
+/* FOOTER SECTION ENDS HERE !!! */
 
 
 
@@ -715,15 +689,16 @@ footer {
 
 
 
+/* MAX WIDTH 1600 STARTS HERE !!! */
 
 @media (max-width:1600px) {
 
-    .aboutBox {
-        font-size: 1.5rem;
-    }
-
     h1 {
         font-size: 3.5rem;
+    }
+
+    .aboutBox {
+        font-size: 1.5rem;
     }
 
     .aboutImg {
@@ -734,21 +709,27 @@ footer {
     .allProjects {
         grid-template-columns: 1fr 1fr;
     }
-
 }
+/* MAX WIDTH 1600 ENDS HERE !!! */
 
+
+
+
+
+
+/* MAX WIDTH 1200 STARTS HERE !!! */
 
 @media (max-width:1200px) {
-
-    .aboutBox {
-        font-size: 1.1rem;
-    }
 
     h1 {
         font-size: 3rem;
     }
 
-    .lineOne {
+    .aboutBox {
+        font-size: 1.1rem;
+    }
+
+    .techIcons {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
@@ -757,8 +738,16 @@ footer {
         width: 200px;
         margin: 50px 50px 0 0;
     }
-
 }
+
+/* MAX WIDTH 1200 ENDS HERE !!! */
+
+
+
+
+
+
+/* MAX WIDTH 1000 STARTS HERE !!! */
 
 @media (max-width:1000px) {
 
@@ -830,8 +819,18 @@ footer {
     .allProjects {
         grid-template-columns: 1fr;
     }
-
 }
+
+/* MAX WIDTH 1000 ENDS HERE !!! */
+
+
+
+
+
+
+
+
+/* MAX WIDTH 800 STARTS HERE !!! */
 
 @media (max-width:800px) {
 
@@ -839,12 +838,12 @@ footer {
         display: none;
     }
 
-   .download{
+   .downloadBox{
     margin-left: -70px;
 
    }
 
-    .lineOne {
+    .techIcons {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
@@ -900,12 +899,23 @@ footer {
     .sendMessage {
         width: 400px;
     }
-
 }
 
+/* MAX WIDTH 800 STARTS HERE !!! */
 
+
+
+
+
+
+/* MAX WIDTH 600 STARTS HERE !!! */
 
 @media (max-width:600px) {
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
     .cv {
         margin: 0;
         position: absolute;
@@ -946,19 +956,19 @@ footer {
 
 
 
-    .lineOne {
+    .techIcons {
         grid-template-columns: 1fr 1fr;
     }
 
     .project {
         border: solid 1px white;
-        padding: 20px;
-        width: 250px;
+        /* padding: 20px; */
+        width: 280px;
         margin: 20px;
     }
 
     .projectImg>img {
-        width: 250px;
+        width: 280px;
     }
 
     .iconBlock {
@@ -983,15 +993,10 @@ footer {
         font-size: .7rem;
     }
 
-
     .sendName,
     .sendMail,
     .sendMessage {
         width: 250px;
     }
-
-    h1 {
-        font-size: 2.2rem;
-    }
-
 }
+/* MAX WIDTH 600 ENDS HERE !!! */

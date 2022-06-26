@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
+    <!-- REFERENCE TO FONT-AWESOME -->>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
     <title>Portifolio</title>
 </head>
 
@@ -14,8 +17,8 @@
 
     <main>
 
-        <div class="topbar boxOn">
-
+        <!-- TOPBAR STARTS HERE -->
+        <div class="topbar">
             <div class="scrollTo">
 
                 <div class="homeBtn">
@@ -25,9 +28,9 @@
                     </div>
                 </div>
 
-                <div class="download">
+                <div class="downloadBox">
                     <button class="cv">
-                        <a href="./CV Dev.pdf" download="CV Michel Pomerantzeff">Resume</a>
+                        <a href="./CV Dev.pdf" download="CV Michel Pomerantzeff"><strong>Resume</strong></a>
                         <i class="fa-solid fa-download"></i>
                     </button>
                 </div>
@@ -41,18 +44,24 @@
             </div>
 
             <div class="contactIcons">
-                <a class="icon linkedin fa-brands fa-linkedin" href="https://www.linkedin.com/in/michelpomerantzeff" target="_blank" rel="noopener"
-                rel="noreferrer"></a>
-                <a class="icon whatsapp fa-brands fa-whatsapp" href="" target="_blank" rel="noopener"
-                rel="noreferrer"></a>
-                <a class="icon github fa-brands fa-github" href="https://github.com/MichelPomerantzeff" target="_blank" rel="noopener"
-                rel="noreferrer"></a>
-                <a class="icon email fa-solid fa-envelope" href="" target="_blank" rel="noopener"
-                rel="noreferrer"></a>
+                <a class="icon linkedin fa-brands fa-linkedin" href="https://www.linkedin.com/in/michelpomerantzeff"
+                    target="_blank" rel="noopener" rel="noreferrer"></a>
+                <a class="icon whatsapp fa-brands fa-whatsapp" href="https://wa.me/353834713034" target="_blank"
+                    rel="noopener" rel="noreferrer"></a>
+                <a class="icon github fa-brands fa-github" href="https://github.com/MichelPomerantzeff" target="_blank"
+                    rel="noopener" rel="noreferrer"></a>
+                <a class="icon email fa-solid fa-envelope" href="mailto:michelpomerantzeff@gmail.com"></a>
             </div>
-
         </div>
+        <!-- TOPBAR ENDS HERE -->
 
+
+
+
+
+
+
+        <!-- HOME SECTION STARTS HERE -->
         <div class="main">
 
             <div class="home">
@@ -68,7 +77,18 @@
                 </div>
                 <i class="fa-solid fa-circle-chevron-down down"></i>
             </div>
+            <!-- HOME SECTION ENDS HERE -->
 
+
+
+
+
+
+
+
+
+
+            <!-- ABOUT SECTION STARTS HERE -->
             <div class="aboutBox">
 
                 <h1>About</h1>
@@ -78,27 +98,41 @@
                         <img class="aboutImg" src="./pp.jpg" alt="profile Image">
                     </div>
 
+                    <div>
+                        <p>I am a Front-end Developer, with a never-ending drive to improve my skills.</p>
 
+                        <p>I love building stuff and if you think there is no better feeling than bringing an abstract
+                            idea to life, we are like minded.
+                        </p>
+                        <p>Professionally I am a team player with strong communication skills who easily adapts to
+                            different enviroments and loves new challanges.
+                        </p>
+                        <p>
+                            Some of my interets are traveling, learning about new cultures, skating, exercing, cooking,
+                            video games among others.
+                        </p>
+                    </div>
 
-                    <p>I am a self-taught Junior Web Developer, with a never-ending drive to improve my skills. Always
-                        learning, refining, expanding and growing.
-                        I consider myself a well-organized team player with strong communication skills who easily
-                        adapts to
-                        different enviroments and loves new challanges.
-                        Currently I am seeking a job opportunity to apply my experience assisting the company's needs as
-                        well as
-                        expand my knowledge.
                     </p>
                 </div>
             </div>
+            <!-- STARTS SECTION ENDS HERE -->
 
+
+
+
+
+
+
+
+            <!-- SKILLS SECTION STARTS HERE -->
             <div class="skillsBox">
 
                 <h1>Skills</h1>
 
-                <div class="techIcons">
+                <div class="skillsDescription">
 
-                    <div class="lineOne">
+                    <div class="techIcons">
                         <div class="iconBlock">
                             <img class="skillIcon javascript" src="./techImages/javascript.png" alt="JavaScript Image">
                             <p>JavaScript</p>
@@ -123,8 +157,6 @@
                             <img class="skillIcon bootstrap" src="./techImages//bootstrap.png" alt="React Image">
                             <p>Bootstrap</p>
                         </div>
-
-
 
                         <div class="iconBlock">
                             <img class="skillIcon " src="./techImages//jquery.png" alt="JQuery Image">
@@ -151,15 +183,25 @@
                             <p>Github</p>
                         </div>
                     </div>
-
                 </div>
             </div>
+            <!-- SKILLS SECTION ENDS HERE -->
 
+
+
+
+
+
+
+
+            <!-- PROJECTS SECTION STARTS HERE -->
             <div class="projectContainer">
 
                 <h1>Projects</h1>
 
                 <div class="allProjects">
+
+                    <!-- LINK SAVER -->
 
                     <div class="project linkSaver">
 
@@ -191,85 +233,31 @@
 
                             <div class="projectDescription">
                                 <h4>Link Saver</h4>
-                                <p>
-                                    Link Saver App helps you store information of products you are browsing on a side
-                                    bar so
-                                    you can scan through them while you are shopping and decide which one is the best
-                                    choice
-                                    for you
-                                    or simply just compare one product to another. Json Server is used as a fake API to
-                                    store all the data.
-                                    Therefore you are able to make POST/PUT/DELETE requests and experince a responsive
-                                    application.
+                                <p class="descriptionTop">
+                                    <strong>It saves the name, store, price and link of products.</strong>
                                 </p>
+                                <div class="descriptionField">
+                                    <li>
+                                        On submit, the information is rendered on a side bar with edit and delete
+                                        buttons.
+                                    </li>
+
+                                    <li>
+                                        Search and price filters make it easier for the user to reduce the list of
+                                        products displayed or simply organize them.
+                                    </li>
+
+                                    <li>
+                                        I used local storage to store the data and React hooks to handle its state
+                                        and display it on the browser.
+                                    </li>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project calculator">
-                        <div class="projectTop">
-                            <div class="projectImg">
-                                <img src="./projectImages/calculator.png" alt="calculator Image">
-                            </div>
 
-                            <div class="projectBtns">
-                                <button class="pBtn demo">
-                                    <a href="https://michelpomerantzeff.github.io/calculator/" target="_blank"
-                                        rel="noopener" rel="noreferrer">
-                                        View Live Demo
-                                    </a>
-                                </button>
-                                <button class="pBtn gh">
-                                    <a href="https://github.com/MichelPomerantzeff/calculator" target="_blank"
-                                        rel="noopener" rel="noreferrer">
-                                        View on Github
-                                    </a>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="projectDescription">
-                            <h4>Calculator</h4>
-                            <p>
-                                Main functions of a calculator. Quick and simple calculations with a nice user
-                                interface.
-                                Responsive and well styled buttons.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="project travelJournal">
-                        <div class="projectTop">
-                            <div class="projectImg">
-                                <img src="./projectImages/journal.png" alt="travelJournal Image">
-                            </div>
-
-                            <div class="projectBtns">
-                                <button class="pBtn demo">
-                                    <a href="https://michelpomerantzeff.github.io/traveljournal/" target="_blank"
-                                        rel="noopener" rel="noreferrer">
-                                        View Live Demo
-                                    </a>
-                                </button>
-                                <button class="pBtn gh"><a href="https://github.com/MichelPomerantzeff/traveljournal"
-                                        target="_blank" rel="noopener" rel="noreferrer">View on Github</a></button>
-                            </div>
-                        </div>
-
-                        <div class="projectDescription">
-                            <h4>Travel Journal</h4>
-                            <p>
-                                This travel journal shows pictures and information such as name, location, date and a
-                                quick
-                                description of a few places I have visited.
-                                The data is saved in a file and accessed through props using React, therefore all the
-                                content is displayed without having to modify the posts one by one.
-                                The location link redirects the user to google maps showing the whereabouts of each
-                                place.
-                            </p>
-                        </div>
-                    </div>
-
+                    <!-- COUNTDOWN -->
 
                     <div class="project countdown">
                         <div class="projectTop">
@@ -295,16 +283,125 @@
 
                         <div class="projectDescription">
                             <h4>Countdown</h4>
-                            <p>
-                                CountdownA useful timer that counts down from the time that is set through the set
-                                button to
-                                zero.
-                                Once started it updates the hours, minutes and seconds until it reachs zero. The start
-                                button switches to "pause"
-                                while the time is running and back to start once "pause" is clicked.
+
+                            <p class="descriptionTop">
+                                <strong>It decreases time from a pre set time to zero.</strong>
                             </p>
+                            <div class="descriptionField">
+
+                                <li>
+                                    Set-time button displays arrows on the browser enabling the user to choose the
+                                    time and it only functions if the current time is equal to zero or the running
+                                    time is paused.
+                                </li>
+
+                                <li>
+                                    The start button hides the arrows, updates the time and switches to a pause
+                                    button.
+                                </li>
+                                <li>
+                                    The pause button stops the time, enables the set-time button to function again and
+                                    switches back to start button.
+                                </li>
+
+                            </div>
                         </div>
                     </div>
+
+
+                    <!-- CALCULATOR -->
+
+                    <div class="project calculator">
+                        <div class="projectTop">
+                            <div class="projectImg">
+                                <img src="./projectImages/calculator.png" alt="calculator Image">
+                            </div>
+
+                            <div class="projectBtns">
+                                <button class="pBtn demo">
+                                    <a href="https://michelpomerantzeff.github.io/calculator/" target="_blank"
+                                        rel="noopener" rel="noreferrer">
+                                        View Live Demo
+                                    </a>
+                                </button>
+                                <button class="pBtn gh">
+                                    <a href="https://github.com/MichelPomerantzeff/calculator" target="_blank"
+                                        rel="noopener" rel="noreferrer">
+                                        View on Github
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="projectDescription">
+                            <h4>Calculator</h4>
+
+                            <p class="descriptionTop">
+                                <strong>A simple calculator with the basic equations.</strong>
+                            </p>
+                            <div class="descriptionField">
+
+                                <li>
+                                    Quick and simple calculations with the basic arithmetics operators.
+                                </li>
+                                <li>
+                                    A nice user interface with responsivity and well styled buttons.
+                                </li>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- TRAVEL JOURNAL -->
+
+                    <div class="project travelJournal">
+                        <div class="projectTop">
+                            <div class="projectImg">
+                                <img src="./projectImages/journal.png" alt="travelJournal Image">
+                            </div>
+
+                            <div class="projectBtns">
+                                <button class="pBtn demo">
+                                    <a href="https://michelpomerantzeff.github.io/traveljournal/" target="_blank"
+                                        rel="noopener" rel="noreferrer">
+                                        View Live Demo
+                                    </a>
+                                </button>
+                                <button class="pBtn gh"><a href="https://github.com/MichelPomerantzeff/traveljournal"
+                                        target="_blank" rel="noopener" rel="noreferrer">View on Github</a></button>
+                            </div>
+                        </div>
+
+                        <div class="projectDescription">
+                            <h4>Travel Journal</h4>
+
+
+                            <p class="descriptionTop">
+                                <strong>Journal with information of places I have visited.</strong>
+                            </p>
+                            <div class="descriptionField">
+
+                                <li>
+                                    It shows information such as photo, name, location, date and
+                                    a quick description of a few places I have visited.
+                                </li>
+                                <li>
+                                    The data is passed from parent to child through props.
+                                </li>
+                                <li>
+                                    The location link redirects the user to google maps showing the whereabouts of
+                                    each place.
+                                </li>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- BUSINESS CARD -->
 
                     <div class="project businessCard">
                         <div class="projectTop">
@@ -330,43 +427,60 @@
 
                         <div class="projectDescription">
                             <h4>Digital Business Card</h4>
-                            <p>
-                                Business Card with digital information and links redirecting the user to respective
-                                pages.
+
+
+                            <p class="descriptionTop">
+                                <strong>It displays information about me.</strong>
                             </p>
+                            <div class="descriptionField">
+
+                                <li>
+                                    Business Card with digital information about me and links to a few of my social
+                                    medias and also some of the projects I built as a Front-end developer.
+                                </li>
+
+                            </div>
+
                         </div>
                     </div>
-
-
                 </div>
-
             </div>
+            <!-- PROJECTS SECTION ENDS HERE -->
 
+
+
+
+
+
+
+
+
+            <!-- CONTACT SECTION STARTS HERE -->
             <div class="contact">
 
                 <h1>Contact</h1>
 
-
-
-
-
-
-
-
-
-
                 <form class="mailBox" action="https://formsubmit.co/michelpomerantzeff@gmail.com" method="POST">
 
-                    <input class="sendName" type="text" name="name" placeholder="Name" required>
-                    <input class="sendMail" type="email" name="email" placeholder="Email Address" required>
-                    <textarea class="sendMessage" name="message" rows="6" placeholder="Message" required></textarea>
+                    <input class="sendName emailInput" type="text" name="name" placeholder="Name" required>
+                    <input class="sendMail emailInput" type="email" name="email" placeholder="Email Address" required>
+                    <textarea class="sendMessage emailInput" name="message" rows="6" placeholder="Message"
+                        required></textarea>
                     <input type="hidden" name="_next" value="">
 
                     <button class="send" type="submit">Send</button>
                 </form>
-
             </div>
+            <!-- CONTACT SECTION ENDS HERE -->
 
+
+
+
+
+
+
+
+            <!-- FOOTER SECTION STARTS HERE -->
             <footer class="footer">
                 <div class="upArrow">
                     <i class="fa-solid fa-circle-chevron-up"></i>
@@ -376,15 +490,15 @@
                     <a class="footerIcon footerLinkedin fa-brands fa-linkedin"
                         href="https://www.linkedin.com/in/michelpomerantzeff" target="_blank" rel="noopener"
                         rel="noreferrer"></a>
-                    <a class="footerIcon footerWhatsapp fa-brands fa-whatsapp" href="" target="_blank" rel="noopener"
-                        rel="noreferrer"></a>
-                    <a class="footerIcon footerGithub fa-brands fa-github" href="https://github.com/MichelPomerantzeff" target="_blank" rel="noopener"
-                        rel="noreferrer"></a>
-                    <a class="footerIcon footerEmail fa-solid fa-envelope" href="" target="_blank" rel="noopener"
-                        rel="noreferrer"></a>
+                    <a class="footerIcon footerWhatsapp fa-brands fa-whatsapp" href="https://wa.me/353834713034"
+                        target="_blank" rel="noopener" rel="noreferrer"></a>
+                    <a class="footerIcon footerGithub fa-brands fa-github" href="https://github.com/MichelPomerantzeff"
+                        target="_blank" rel="noopener" rel="noreferrer"></a>
+                    <a class="footerIcon footerEmail fa-solid fa-envelope" href="mailto:michelpomerantzeff@gmail.com"
+                        target="_blank" rel="noopener" rel="noreferrer"></a>
                 </div>
             </footer>
-
+            <!-- FOOTER SECTION ENDS HERE -->
     </main>
 
     <script src="index.js"></script>
