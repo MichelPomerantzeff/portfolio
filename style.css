@@ -42,6 +42,7 @@ h1 {
     position: fixed;
     top: 0;
     width: 100%;
+    box-shadow: 3px 3px 5px rgb(85, 84, 84);
 }
 
 .scrollTo {
@@ -683,6 +684,11 @@ footer {
 
 .footerEmail:hover {
     color: black;
+}
+
+.copyRight{
+    color: white;
+    font-style: italic;
 }
 
 /* FOOTER SECTION ENDS HERE !!! */
