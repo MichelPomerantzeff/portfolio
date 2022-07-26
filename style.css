@@ -54,30 +54,33 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
     cursor: pointer;
+    position: relative;
+    border: solid 1px grey;
+    border-radius: 50%;
 }
 
 #homeBtn {
+    background-color: #363945;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 70px;
     height: 70px;
+    position: absolute;
     border-radius: 50%;
-    box-shadow: 0 0 2px 1px grey;
 }
 
 #homeBtn:hover {
-    box-shadow: 0 1px 2px 2px grey;
-    margin-bottom: 5px;
-    transition: .1s;
+    box-shadow: 0 1px 2px 1px grey;
+    transform: translateY(-2px);
+    transition: transform .2s ease-in-out;
 }
 
 #homeBtn:active {
-    box-shadow: 0 0 2px 1px grey;
-    margin-bottom: 0px;
+    transform: translateY(0);
 }
 
 .initials{
@@ -120,13 +123,14 @@ h1 {
 }
 
 .cv:hover {
-    margin-bottom: 5px;
+    transform: translateY(-2px);
+    transition: transform .2s ease-in-out;
     box-shadow: 0 1px 2px 0 white;
     cursor: pointer;
 }
 
 .cv:active {
-    margin-bottom: 0;
+    transform: translateY(0);
     box-shadow: none;
     transition: .1s;
 }
@@ -270,14 +274,15 @@ h1 {
 }
 
 .fa-circle-chevron-down:hover {
-    margin-bottom: 10px;
-    box-shadow: 0px 3px 4px 0px grey;
+    transform: translateY(-3px);
+    box-shadow: 0px 2px 3px 1px grey;
     border-radius: 50px;
+    transition: transform .2s ease-in;
 }
 
 .fa-circle-chevron-down:active {
     box-shadow: none;
-    margin-bottom: 0;
+    transform: translateY(0);
 }
 
 /* HOME SECTION ENDS HERE !!! */
@@ -624,12 +629,14 @@ footer {
 }
 
 .fa-circle-chevron-up:hover {
-    margin-top: 5px;
-    box-shadow: 2px 2px 4px 0px grey;
+    transform: translateY(-3px);
+    transition: transform .2s ease-in;
+    box-shadow: 2px 2px 2px 0px rgb(73, 73, 73);
 
 }
 
 .fa-circle-chevron-up:active {
+    transform: translateY(0);
     box-shadow: none;
     margin: 10px;
 }
