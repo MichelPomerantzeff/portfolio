@@ -851,6 +851,11 @@ footer {
         display: none;
     }
 
+    .homeBtn {
+        z-index: -1;
+        border: none;
+    }
+    
    .downloadBox{
     margin-left: -70px;
 
@@ -930,9 +935,9 @@ footer {
     }
 
     .cv {
-        margin: 0;
         position: absolute;
         right: 20px;
+        top: 20px;
     }
 
     .contactIcons {
