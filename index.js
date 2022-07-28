@@ -50,40 +50,25 @@ topbarContact.addEventListener("click", () => {
 })
 
 
+// Scroll page to bottom
+const footer = document.querySelector("footer")
+const down = document.querySelector(".down")
 
-// Change HOME BUTTON to from MP to HOME icon and vise-versa on mouse hover
-const homeBtn = document.querySelector('#homeBtn')
-const house = document.querySelector('.house')
-const initials = document.querySelector('.initials')
-
-homeBtn.addEventListener("mouseenter", () => {
-    initials.classList.add("hide")
-    house.classList.add("fa-house")
-})
-
-homeBtn.addEventListener("mouseleave", () => {
-    house.classList.remove("fa-house")
-    initials.classList.remove("hide")
+down.addEventListener("click", () => {
+    footer.scrollIntoView({ behavior: "smooth", block: "center" })
 })
 
 
 
-// Scroll the page to the very bottom
+// Scroll page to top
 const home = document.querySelector(".home")
 const upArrow = document.querySelector(".upArrow")
+const homeBtn = document.querySelector(".homeBtn")
+
 
 upArrow.addEventListener("click", () => {
     home.scrollIntoView({ behavior: "smooth", block: "center" })
 })
 homeBtn.addEventListener("click", () => {
     home.scrollIntoView({ behavior: "smooth", block: "center" })
-})
-
-
-// Scroll the page to the very top
-const footer = document.querySelector("footer")
-const down = document.querySelector(".down")
-
-down.addEventListener("click", () => {
-    footer.scrollIntoView({ behavior: "smooth", block: "center" })
 })
