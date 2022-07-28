@@ -48,7 +48,7 @@ h1 {
 .scrollTo {
     display: flex;
     align-items: center;
-    margin-left: 20px;
+    width: 100%;
 }
 
 
@@ -283,11 +283,11 @@ h1 {
     margin-right: 3px;
 }
 
-.scrollIcons {
+.scrollTags {
     display: flex;
     align-items: center;
     height: 50px;
-    margin-left: 30px;
+    margin: auto;
 }
 
 .topbarScrollTo {
@@ -912,19 +912,25 @@ footer {
 
 @media (max-width:1000px) {
 
-    .cv {
-        padding: 7px;
+
+    .cv-front {
+        padding: 7px 11px;
+        font-size: .9rem;
     }
 
+
+
+
+
+
+
     .scrollTo {
-        margin-left: 20px;
         font-size: .8rem;
     }
 
-    .scrollIcons {
+    .scrollTags {
         display: flex;
         height: 50px;
-        margin-left: 20px;
     }
 
     .topbarScrollTo {
@@ -995,38 +1001,26 @@ footer {
 
 @media (max-width:800px) {
 
-    #homeBtn {
-        display: none;
+
+    .homeButton-front {
+        padding: 5px 11px;
     }
 
-    .homeBtn {
-        z-index: -1;
-        border: none;
+    .initials{
+        font-size: 2rem;
     }
 
-    .downloadBox {
-        margin-left: -70px;
-
+    .cv-front {
+        padding: 5px 5px;
+        font-size: .7rem;
     }
 
     .techIcons {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .cv {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: 10px;
-    }
-
     .scrollTo {
-        margin-left: 0;
         font-size: .7rem;
-    }
-
-    .scrollIcons {
-        margin: 0px;
     }
 
     .icon {
@@ -1078,14 +1072,23 @@ footer {
 
 @media (max-width:600px) {
 
-    h1 {
-        font-size: 2.5rem;
+    .homeBtn{
+        display: none;
+
     }
 
-    .cv {
-        position: absolute;
-        right: 20px;
-        top: 20px;
+    .cv-front {
+        padding: 5px 10px;
+        font-size: .7rem;
+    }
+
+    .scrollTo{
+        width: 100%;
+    }
+    
+
+    h1 {
+        font-size: 2.5rem;
     }
 
     .contactIcons {
