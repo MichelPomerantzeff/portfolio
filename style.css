@@ -548,9 +548,9 @@ h1 {
 }
 
 .allProjects {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .project {
@@ -866,9 +866,6 @@ footer {
         margin: 50px 50px 0 0;
     }
 
-    .allProjects {
-        grid-template-columns: 1fr 1fr;
-    }
 }
 
 /* MAX WIDTH 1600 ENDS HERE !!! */
@@ -981,10 +978,6 @@ footer {
 
     h1 {
         font-size: 3rem;
-    }
-
-    .allProjects {
-        grid-template-columns: 1fr;
     }
 }
 
