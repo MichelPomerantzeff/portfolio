@@ -34,7 +34,7 @@
 
 
                 <div class="resume">
-                    <a href="./resume/CV-Dev.pdf" download="CV Michel Pomerantzeff">
+                    <a href="./resume/cv.pdf" download="CV Michel Pomerantzeff">
                         <button class="cv-pushable button-pushable" role="button">
                             <span class="cv-shadow button-shadow"></span>
                             <span class="cv-edge button-edge"></span>
@@ -365,16 +365,12 @@
                             <div class="descriptionField">
 
                                 <li>
-                                    It shows information such as photo, name, location, date and
-                                    a quick description of a few places I have visited.
+                                    Users can make their own travel journal, being able to add information about the
+                                    places they have been to such as photos, date and description.
                                 </li>
                                 <li>
                                     The data is passed from parent to child through props therefore the code is neater
                                     as it is not necessary to write the same code repeatedly for each child component.
-                                </li>
-                                <li>
-                                    The location link redirects the user to google maps showing the whereabouts of
-                                    each place.
                                 </li>
 
                             </div>
@@ -480,108 +476,66 @@
                         </div>
                     </div>
 
+                    <!-- PROJECTS SECTION ENDS HERE -->
 
-                    <!-- BUSINESS CARD -->
 
-                    <!-- <div class="project businessCard">
-                        <div class="projectTop">
-                            <div class="projectImg">
-                                <img src="./projectImages/bc.png" alt="businessCard Image">
-                            </div>
 
-                            <div class="projectBtns">
-                                <a href="https://michelpomerantzeff.github.io/businesscard/" target="_blank"
-                                    rel="noopener" rel="noreferrer">
-                                    <button class="pBtn demo">
-                                        View Live Demo
-                                    </button>
-                                </a>
-                                <a href="https://github.com/MichelPomerantzeff/businesscard" target="_blank"
-                                    rel="noopener" rel="noreferrer">
-                                    <button class="pBtn gh">
-                                        View on Github
-                                    </button>
-                                </a>
-                            </div>
+
+
+
+
+
+
+                    <!-- CONTACT SECTION STARTS HERE -->
+                    <div class="contact">
+
+                        <h1>Contact</h1>
+
+                        <form class="mailBox" action="https://formsubmit.co/michelpomerantzeff@gmail.com" method="POST">
+
+                            <input class="sendName emailInput" type="text" name="name" placeholder="Name" required>
+                            <input class="sendMail emailInput" type="email" name="email" placeholder="Email Address"
+                                required>
+                            <textarea class="sendMessage emailInput" name="message" rows="6" placeholder="Message"
+                                required></textarea>
+                            <input type="hidden" name="_next" value="">
+
+                            <input type="hidden" name="_next" value="https://michelpomerantzeff.github.io/portfolio/">
+
+                            <button class="send" type="submit">Send</button>
+                        </form>
+                    </div>
+                    <!-- CONTACT SECTION ENDS HERE -->
+
+
+
+
+
+
+
+
+                    <!-- FOOTER SECTION STARTS HERE -->
+                    <footer class="footer">
+                        <div class="upArrow">
+                            <i class="fa-solid fa-circle-chevron-up"></i>
                         </div>
+                        <div class="footerIcons">
 
-                        <div class="projectDescription">
-                            <h4>Digital Business Card</h4>
-
-
-                            <p class="descriptionTop">
-                                <strong>It displays information about me.</strong>
-                            </p>
-                            <div class="descriptionField">
-
-                                <li>
-                                    Business Card with digital information about me and links to a few of my social
-                                    medias and also some of the projects I built as a Front-end developer.
-                                </li>
-
-                            </div>
-
+                            <a class="footerIcon footerLinkedin fa-brands fa-linkedin"
+                                href="https://www.linkedin.com/in/michelpomerantzeff" target="_blank" rel="noopener"
+                                rel="noreferrer"></a>
+                            <a class="footerIcon footerWhatsapp fa-brands fa-whatsapp" href="https://wa.me/353834713034"
+                                target="_blank" rel="noopener" rel="noreferrer"></a>
+                            <a class="footerIcon footerGithub fa-brands fa-github"
+                                href="https://github.com/MichelPomerantzeff" target="_blank" rel="noopener"
+                                rel="noreferrer"></a>
+                            <a class="footerIcon footerEmail fa-solid fa-envelope"
+                                href="mailto:michelpomerantzeff@gmail.com" target="_blank" rel="noopener"
+                                rel="noreferrer"></a>
                         </div>
-                    </div> -->
-                </div>
-            </div>
-            <!-- PROJECTS SECTION ENDS HERE -->
-
-
-
-
-
-
-
-
-
-            <!-- CONTACT SECTION STARTS HERE -->
-            <div class="contact">
-
-                <h1>Contact</h1>
-
-                <form class="mailBox" action="https://formsubmit.co/michelpomerantzeff@gmail.com" method="POST">
-
-                    <input class="sendName emailInput" type="text" name="name" placeholder="Name" required>
-                    <input class="sendMail emailInput" type="email" name="email" placeholder="Email Address" required>
-                    <textarea class="sendMessage emailInput" name="message" rows="6" placeholder="Message"
-                        required></textarea>
-                    <input type="hidden" name="_next" value="">
-
-                    <input type="hidden" name="_next" value="https://michelpomerantzeff.github.io/portfolio/">
-
-                    <button class="send" type="submit">Send</button>
-                </form>
-            </div>
-            <!-- CONTACT SECTION ENDS HERE -->
-
-
-
-
-
-
-
-
-            <!-- FOOTER SECTION STARTS HERE -->
-            <footer class="footer">
-                <div class="upArrow">
-                    <i class="fa-solid fa-circle-chevron-up"></i>
-                </div>
-                <div class="footerIcons">
-
-                    <a class="footerIcon footerLinkedin fa-brands fa-linkedin"
-                        href="https://www.linkedin.com/in/michelpomerantzeff" target="_blank" rel="noopener"
-                        rel="noreferrer"></a>
-                    <a class="footerIcon footerWhatsapp fa-brands fa-whatsapp" href="https://wa.me/353834713034"
-                        target="_blank" rel="noopener" rel="noreferrer"></a>
-                    <a class="footerIcon footerGithub fa-brands fa-github" href="https://github.com/MichelPomerantzeff"
-                        target="_blank" rel="noopener" rel="noreferrer"></a>
-                    <a class="footerIcon footerEmail fa-solid fa-envelope" href="mailto:michelpomerantzeff@gmail.com"
-                        target="_blank" rel="noopener" rel="noreferrer"></a>
-                </div>
-                <span class="copyRight">&copy; Michel Pomerantzeff</span>
-            </footer>
-            <!-- FOOTER SECTION ENDS HERE -->
+                        <span class="copyRight">&copy; Michel Pomerantzeff</span>
+                    </footer>
+                    <!-- FOOTER SECTION ENDS HERE -->
     </main>
 
     <script src="index.js"></script>
