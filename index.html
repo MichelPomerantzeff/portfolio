@@ -5,7 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/topbar.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/skills.css">
+    <link rel="stylesheet" href="./css/projects.css">
+    <link rel="stylesheet" href="./css/contacts.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+    <link rel="stylesheet" href="./css/responsivity/midDesktop.css">
+    <link rel="stylesheet" href="./css/responsivity/laptop.css">
+    <link rel="stylesheet" href="./css/responsivity/bigTablet.css">
+    <link rel="stylesheet" href="./css/responsivity/tablet.css">
+    <link rel="stylesheet" href="./css/responsivity/mobile.css">
 
     <!-- REFERENCE TO FONT-AWESOME -->>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -19,7 +32,7 @@
 
         <!-- TOPBAR STARTS HERE -->
         <div class="topbar">
-            <div class="scrollTo">
+            <div class="topbar-container">
 
 
                 <div class="homeBtn">
@@ -70,7 +83,7 @@
 
         <!-- HOME SECTION STARTS HERE -->
         <div class="home">
-            <div>
+            <div class="home-intro">
                 Hi, I am <span class="name">Michel Pomerantzeff</span>.<br>
                 I am a Front-end developer.
             </div>
@@ -80,7 +93,7 @@
                 <button class="scroll toProject">Projects</button>
                 <button class="scroll toContact">Contact</button>
             </div>
-            <i class="fa-solid fa-circle-chevron-down down"></i>
+            <i class="fa-solid fa-circle-chevron-down arrow down"></i>
         </div>
         <!-- HOME SECTION ENDS HERE -->
 
@@ -96,14 +109,15 @@
         <!-- ABOUT SECTION STARTS HERE -->
         <div class="aboutBox">
 
-            <h1>About</h1>
-            <div class="aboutDescription">
+            <h1 class="section-title">About</h1>
 
-                <div>
+            <div class="about-wrapper">
+
+                <div class="about-profile-image">
                     <img class="aboutImg" src="./pp.jpg" alt="profile Image">
                 </div>
 
-                <div>
+                <div class="aboutDescription">
                     <p>I am a Front-end Developer, with a never-ending drive to improve my skills.</p>
 
                     <p>I love the concept of bringing abstract ideas to life and being able to do that through
@@ -117,9 +131,8 @@
                         and exploring new techs.
                     </p>
                 </div>
-
-                </p>
             </div>
+
         </div>
         <!-- STARTS SECTION ENDS HERE -->
 
@@ -133,61 +146,62 @@
         <!-- SKILLS SECTION STARTS HERE -->
         <div class="skillsBox">
 
-            <h1>Skills</h1>
+            <h1 class="section-title">Skills</h1>
 
-            <div class="skillsDescription">
+            <div class="skills-container">
 
-                <div class="techIcons">
-                    <div class="iconBlock">
+                <div class="icons-wrapper">
+                    <div class="icon-box">
                         <img class="skillIcon javascript" src="./techImages/javascript.png" alt="JavaScript Image">
                         <p>JavaScript</p>
                     </div>
 
-                    <div class="iconBlock">
+                    <div class="icon-box">
                         <img class="skillIcon html" src="./techImages/html.png" alt="HTML Image">
                         <p>HTML</p>
                     </div>
 
-                    <div class="iconBlock">
+                    <div class="icon-box">
                         <img class="skillIcon css" src="./techImages/css.png" alt="CSS Image">
                         <p>CSS</p>
                     </div>
 
-                    <div class="iconBlock">
+                    <div class="icon-box">
                         <img class="skillIcon react" src="./techImages//react.png" alt="React Image">
                         <p>React</p>
                     </div>
 
-                    <div class="iconBlock">
+                    <div class="icon-box">
                         <img class="skillIcon bootstrap" src="./techImages//bootstrap.png" alt="React Image">
                         <p>Bootstrap</p>
                     </div>
 
-                    <div class="iconBlock">
+                    <div class="icon-box">
                         <img class="skillIcon " src="./techImages//jquery.png" alt="JQuery Image">
                         <p>JQuery</p>
                     </div>
 
-                    <div class="iconBlock">
+                    <div class="icon-box">
                         <img class="skillIcon " src="./techImages//node.png" alt="Node Image">
                         <p>Node.JS</p>
                     </div>
 
-                    <div class="iconBlock">
+                    <div class="icon-box">
                         <img class="skillIcon " src="./techImages//python.png" alt="Python Image">
                         <p>Python</p>
                     </div>
 
-                    <div class="iconBlock">
+                    <div class="icon-box">
                         <img class="skillIcon " src="./techImages//git.png" alt="Git Image">
                         <p>GIT</p>
                     </div>
 
-                    <div class="iconBlock">
+                    <div class="icon-box">
                         <img class="skillIcon " src="./techImages//github.png" alt="Github Image">
                         <p>Github</p>
                     </div>
                 </div>
+
             </div>
         </div>
         <!-- SKILLS SECTION ENDS HERE -->
@@ -202,157 +216,153 @@
         <!-- PROJECTS SECTION STARTS HERE -->
         <div class="projectContainer">
 
-            <h1>Projects</h1>
+            <h1 class="section-title">Projects</h1>
 
             <div class="allProjects">
 
                 <!-- MOVIE APP -->
 
-                <div class="project movie-app">
+                <div class="project-wrapper">
 
-                    <div class="wrap">
-                        <div class="projectTop">
-                            <div class="projectImg">
-                                <img src="./projectImages/movieApp.png" alt="movie-app Image">
-                            </div>
+                    <div class="project-img">
+                        <img src="./projectImages/movieApp.png" alt="movie-app Image">
+                    </div>
 
 
-                            <div class="projectBtns">
+                    <div class="project-buttons-container">
 
-                                <a href="https://michelpomerantzeff.github.io/movie-app/" target="_blank" rel="noopener"
-                                    rel="noreferrer">
-                                    <button class="pBtn demo">
-                                        View Live Demo
-                                    </button>
-                                </a>
+                        <a href="https://michelpomerantzeff.github.io/movie-app/" target="_blank" rel="noopener"
+                            rel="noreferrer">
+                            <button class="project-button">
+                                View Live Demo
+                            </button>
+                        </a>
 
-                                <a href="https://github.com/MichelPomerantzeff/movie-app" target="_blank" rel="noopener"
-                                    rel="noreferrer">
-                                    <button class="pBtn gh">
-                                        View on Github
-                                    </button>
-                                </a>
+                        <a href="https://github.com/MichelPomerantzeff/movie-app" target="_blank" rel="noopener"
+                            rel="noreferrer">
+                            <button class="project-button">
+                                View on Github
+                            </button>
+                        </a>
 
-                            </div>
-                        </div>
+                    </div>
 
-                        <div class="projectDescription">
-                            <h4>Movie App</h4>
-                            <p class="descriptionTop">
-                                <strong>Movie App utilising React Hooks, Context API and Local Storage.</strong>
-                            </p>
-                            <div class="descriptionField">
-                                <li>
-                                    This App allows the user to search for movies by name, check extended
-                                    information about a movie, add movies to watchlist or watched movies and delete
-                                    movies from a list.
-                                </li>
 
-                                <li>
-                                    I used React Hooks to consume data from OMDb API as well as handle its states,
-                                    Local Storage to store data of the movies added or deleted from the lists and
-                                    Context API to access global states on multiple components throughout the whole
-                                    application.
-                                </li>
+                    <div class="project-description">
+                        <h4>Movie App</h4>
+                        <p class="project-summary">
+                            <strong>Movie App utilising React Hooks, Context API and Local Storage.</strong>
+                        </p>
+                        <div class="descriptionField">
+                            <li>
+                                This App allows the user to search for movies by name, check extended
+                                information about a movie, add movies to watchlist or watched movies and delete
+                                movies from a list.
+                            </li>
 
-                                <li>
-                                    Future implementation: Add a user's own rate and comment about movies that have
-                                    been watched.
-                                </li>
-                            </div>
+                            <li>
+                                I used React Hooks to consume data from OMDb API as well as handle its states,
+                                Local Storage to store data of the movies added or deleted from the lists and
+                                Context API to access global states on multiple components throughout the whole
+                                application.
+                            </li>
+
+                            <li>
+                                Future implementation: Add a user's own rate and comment about movies that have
+                                been watched.
+                            </li>
                         </div>
                     </div>
+
                 </div>
 
 
 
                 <!-- LINK SAVER -->
 
-                <div class="project linkSaver">
+                <div class="project-wrapper">
 
-                    <div class="wrap">
-                        <div class="projectTop">
-                            <div class="projectImg">
-                                <img src="./projectImages/ls.png" alt="linksaver Image">
-                            </div>
+                    <div class="project-img">
+                        <img src="./projectImages/ls.png" alt="linksaver Image">
+                    </div>
 
 
-                            <div class="projectBtns">
+                    <div class="project-buttons-container">
 
-                                <a href="https://michelpomerantzeff.github.io/linksaver-with-localStorage/"
-                                    target="_blank" rel="noopener" rel="noreferrer">
-                                    <button class="pBtn demo">
-                                        View Live Demo
-                                    </button>
-                                </a>
+                        <a href="https://michelpomerantzeff.github.io/linksaver-with-localStorage/" target="_blank"
+                            rel="noopener" rel="noreferrer">
+                            <button class="project-button">
+                                View Live Demo
+                            </button>
+                        </a>
 
-                                <a href="https://github.com/MichelPomerantzeff/linksaver-with-localStorage"
-                                    target="_blank" rel="noopener" rel="noreferrer">
-                                    <button class="pBtn gh">
-                                        View on Github
-                                    </button>
-                                </a>
+                        <a href="https://github.com/MichelPomerantzeff/linksaver-with-localStorage" target="_blank"
+                            rel="noopener" rel="noreferrer">
+                            <button class="project-button">
+                                View on Github
+                            </button>
+                        </a>
 
-                            </div>
-                        </div>
+                    </div>
 
-                        <div class="projectDescription">
-                            <h4>Link Saver</h4>
-                            <p class="descriptionTop">
-                                <strong>Link Saver stores information of online products.</strong>
-                            </p>
-                            <div class="descriptionField">
-                                <li>
-                                    On submit, the information is saved and rendered on the side bar with an edit
-                                    and a delete
-                                    button.
-                                </li>
 
-                                <li>
-                                    Search and price filters make it easier for the user to reduce the list of
-                                    products displayed or simply organize them better.
-                                </li>
+                    <div class="project-description">
+                        <h4>Link Saver</h4>
+                        <p class="project-summary">
+                            <strong>Link Saver stores information of online products.</strong>
+                        </p>
+                        <div class="descriptionField">
+                            <li>
+                                On submit, the information is saved and rendered on the side bar with an edit
+                                and a delete
+                                button.
+                            </li>
 
-                                <li>
-                                    I used Local Storage to store the data and React hooks to handle its state
-                                    and display it on the browser.
-                                </li>
-                            </div>
+                            <li>
+                                Search and price filters make it easier for the user to reduce the list of
+                                products displayed or simply organize them better.
+                            </li>
+
+                            <li>
+                                I used Local Storage to store the data and React hooks to handle its state
+                                and display it on the browser.
+                            </li>
                         </div>
                     </div>
+
                 </div>
 
 
 
                 <!-- TRAVEL JOURNAL -->
 
-                <div class="project travelJournal">
-                    <div class="projectTop">
-                        <div class="projectImg">
-                            <img src="./projectImages/journal.png" alt="travelJournal Image">
-                        </div>
+                <div class="project-wrapper">
 
-                        <div class="projectBtns">
-                            <a href="https://michelpomerantzeff.github.io/traveljournal/" target="_blank" rel="noopener"
-                                rel="noreferrer">
-                                <button class="pBtn demo">
-                                    View Live Demo
-                                </button>
-                            </a>
-                            <a href="https://github.com/MichelPomerantzeff/traveljournal" target="_blank" rel="noopener"
-                                rel="noreferrer">
-                                <button class="pBtn gh">
-                                    View on Github
-                                </button>
-                            </a>
-                        </div>
+                    <div class="project-img">
+                        <img src="./projectImages/journal.png" alt="travelJournal Image">
                     </div>
 
-                    <div class="projectDescription">
+                    <div class="project-buttons-container">
+                        <a href="https://michelpomerantzeff.github.io/traveljournal/" target="_blank" rel="noopener"
+                            rel="noreferrer">
+                            <button class="project-button">
+                                View Live Demo
+                            </button>
+                        </a>
+                        <a href="https://github.com/MichelPomerantzeff/traveljournal" target="_blank" rel="noopener"
+                            rel="noreferrer">
+                            <button class="project-button">
+                                View on Github
+                            </button>
+                        </a>
+                    </div>
+
+
+                    <div class="project-description">
                         <h4>Travel Journal</h4>
 
 
-                        <p class="descriptionTop">
+                        <p class="project-summary">
                             <strong>Travel Journal containing information of places I have visited.</strong>
                         </p>
                         <div class="descriptionField">
@@ -374,32 +384,32 @@
 
                 <!-- COUNTDOWN -->
 
-                <div class="project countdown">
-                    <div class="projectTop">
-                        <div class="projectImg">
-                            <img src="./projectImages/countdown.png" alt="Countdown Image">
-                        </div>
+                <div class="project-wrapper">
 
-                        <div class="projectBtns">
-                            <a href="https://michelpomerantzeff.github.io/Countdown/" target="_blank" rel="noopener"
-                                rel="noreferrer">
-                                <button class="pBtn demo">
-                                    View Live Demo
-                                </button>
-                            </a>
-                            <a href="https://github.com/MichelPomerantzeff/Countdown" target="_blank" rel="noopener"
-                                rel="noreferrer">
-                                <button class="pBtn gh">
-                                    View on Github
-                                </button>
-                            </a>
-                        </div>
+                    <div class="project-img">
+                        <img src="./projectImages/countdown.png" alt="Countdown Image">
                     </div>
 
-                    <div class="projectDescription">
+                    <div class="project-buttons-container">
+                        <a href="https://michelpomerantzeff.github.io/Countdown/" target="_blank" rel="noopener"
+                            rel="noreferrer">
+                            <button class="project-button">
+                                View Live Demo
+                            </button>
+                        </a>
+                        <a href="https://github.com/MichelPomerantzeff/Countdown" target="_blank" rel="noopener"
+                            rel="noreferrer">
+                            <button class="project-button">
+                                View on Github
+                            </button>
+                        </a>
+                    </div>
+
+
+                    <div class="project-description">
                         <h4>Countdown</h4>
 
-                        <p class="descriptionTop">
+                        <p class="project-summary">
                             <strong>It decreases time from a pre-set time to zero.</strong>
                         </p>
                         <div class="descriptionField">
@@ -425,32 +435,32 @@
 
                 <!-- CALCULATOR -->
 
-                <div class="project calculator">
-                    <div class="projectTop">
-                        <div class="projectImg">
-                            <img src="./projectImages/calculator.png" alt="calculator Image">
-                        </div>
+                <div class="project-wrapper">
 
-                        <div class="projectBtns">
-                            <a href="https://michelpomerantzeff.github.io/calculator/" target="_blank" rel="noopener"
-                                rel="noreferrer">
-                                <button class="pBtn demo">
-                                    View Live Demo
-                                </button>
-                            </a>
-                            <a href="https://github.com/MichelPomerantzeff/calculator" target="_blank" rel="noopener"
-                                rel="noreferrer">
-                                <button class="pBtn gh">
-                                    View on Github
-                                </button>
-                            </a>
-                        </div>
+                    <div class="project-img">
+                        <img src="./projectImages/calculator.png" alt="calculator Image">
                     </div>
 
-                    <div class="projectDescription">
+                    <div class="project-buttons-container">
+                        <a href="https://michelpomerantzeff.github.io/calculator/" target="_blank" rel="noopener"
+                            rel="noreferrer">
+                            <button class="project-button">
+                                View Live Demo
+                            </button>
+                        </a>
+                        <a href="https://github.com/MichelPomerantzeff/calculator" target="_blank" rel="noopener"
+                            rel="noreferrer">
+                            <button class="project-button">
+                                View on Github
+                            </button>
+                        </a>
+                    </div>
+
+
+                    <div class="project-description">
                         <h4>Calculator</h4>
 
-                        <p class="descriptionTop">
+                        <p class="project-summary">
                             <strong>Calculator with the basic equations.</strong>
                         </p>
                         <div class="descriptionField">
@@ -482,22 +492,23 @@
 
 
         <!-- CONTACT SECTION STARTS HERE -->
-        <div class="contact">
+        <div class="contact-container">
 
-            <h1>Contact</h1>
+            <h1 class="section-title">Contact</h1>
 
-            <form class="mailBox" action="https://formsubmit.co/michelpomerantzeff@gmail.com" method="POST">
+            <div class="form-wrapper">
+                <form action="https://formsubmit.co/michelpomerantzeff@gmail.com" method="POST">
 
-                <input class="sendName emailInput" type="text" name="name" placeholder="Name" required>
-                <input class="sendMail emailInput" type="email" name="email" placeholder="Email Address" required>
-                <textarea class="sendMessage emailInput" name="message" rows="6" placeholder="Message"
-                    required></textarea>
-                <input type="hidden" name="_next" value="">
+                    <input class="input-name form-input" type="text" name="name" placeholder="Name" required>
+                    <input class="input-email form-input" type="email" name="email" placeholder="Email Address" required>
+                    <textarea class="input-message form-input" name="message" rows="6" placeholder="Message"
+                        required></textarea>
+                        
+                    <input type="hidden" name="_next" value="https://michelpomerantzeff.github.io/portfolio/">
 
-                <input type="hidden" name="_next" value="https://michelpomerantzeff.github.io/portfolio/">
-
-                <button class="send" type="submit">Send</button>
-            </form>
+                    <button class="send" type="submit">Send</button>
+                </form>
+            </div>
         </div>
         <!-- CONTACT SECTION ENDS HERE -->
 
@@ -510,7 +521,7 @@
         <!-- FOOTER SECTION STARTS HERE -->
         <footer class="footer">
             <div class="upArrow">
-                <i class="fa-solid fa-circle-chevron-up"></i>
+                <i class="fa-solid fa-circle-chevron-up arrow"></i>
             </div>
             <div class="footerIcons">
 

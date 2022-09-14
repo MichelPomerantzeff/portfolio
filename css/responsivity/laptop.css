@@ -1,0 +1,77 @@
+/* MAX WIDTH 1200 STARTS HERE !!! */
+
+@media (max-width:1200px) {
+
+    .initials{
+        font-size: 1.9rem;
+    }
+
+    .cv-front {
+        padding: 4px 8px;
+        font-size: .8rem;
+    }
+
+    .scrollTags{
+        font-size: 1.1rem;
+    }
+
+    .topbarScrollTo {
+        margin: 0 10px;
+    }
+
+    .icon {
+        margin: 0 10px;
+        font-size: 1.6rem;
+    }
+    /* END OF TOPBAR  */
+    
+    .home-intro {
+        font-size: 3rem;
+    }    
+    /* END OF HOME  */
+
+    .about-wrapper {
+        font-size: 1.2rem;
+    }   
+    /* END OF ABOUT  */
+        
+    
+    .icons-wrapper{
+        gap: 80px;
+        width: 700px;
+    }
+    
+    .icon-box {
+        font-size: .9rem;
+    }
+    
+    .skillIcon {
+        width: 60px;
+    }
+    /* END OF SKILLS  */
+    
+    .form-input {
+        font-size: 1.2rem;
+    }
+    /* END OF CONTACT  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .section-title {
+        font-size: 3rem;
+    }
+  
+}
+
+/* MAX WIDTH 1200 ENDS HERE !!! */

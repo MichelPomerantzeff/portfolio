@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "OpenSans-SemiBold";
+    src: url("../fonts/OpenSans-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url("./fonts/OpenSans-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "OpenSans-SemiBold";
+}
+
+.section-title {
+    font-size: 4rem;
+}
+
+:root {
+    --mainColor: #0074D9;
+    --soft-mainColor: #5ad9ff;
+}

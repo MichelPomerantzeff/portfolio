@@ -1,0 +1,94 @@
+/* PROJECTS SECTION STARTS HERE !!! */
+
+.projectContainer h1 {
+    text-shadow: 2px 2px 2px black;
+}
+
+.projectContainer {
+    background-image: radial-gradient(100% 100% at 100% 0, var(--soft-mainColor) 0, var(--mainColor) 100%);
+    color: white;
+    text-shadow: 1px 0 1px grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.allProjects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.project-wrapper {
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    width: 500px;
+    margin: 20px;
+}
+
+.project-img>img {
+    width: 500px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.project-buttons-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 25px auto;
+}
+
+.project-buttons-container a{
+    text-decoration: none;
+}
+
+.project-button {
+    display: flex;
+    align-items: center;
+    box-shadow: rgb(11, 16, 20) 0 2px 4px, rgba(13, 18, 24, 0.3) 0 7px 13px -3px, rgba(45, 63, 90, 0.5) 0 -3px 0 inset;
+    background-image: radial-gradient(100% 100% at 100% 0, #d6d2d2 0, #161414 100%);
+    border: 0;
+    align-items: center;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    padding: 12px;
+    transition: box-shadow .15s, transform .15s;
+    font-size: .9rem;
+}
+
+.project-button:hover {
+    box-shadow: rgba(35, 56, 66, 0.4) 0 4px 8px, rgba(35, 57, 66, 0.3) 0 7px 13px -3px, rgb(164, 185, 190)0 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.project-button:active {
+    box-shadow: #0b1725 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.project-button:focus {
+    box-shadow: #111c2c 0 0 0 1.5px inset, rgba(45, 57, 66, 0.4) 0 2px 4px, rgba(46, 75, 92, 0.3) 0 7px 13px -3px, #1c2530 0 -3px 0 inset;
+}
+
+.project-description>h4 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 5px;
+}
+
+.project-summary {
+    margin-left: 20px;
+}
+
+.descriptionField {
+    background-color: rgba(158, 153, 153, 0.267);
+    margin: 2px 10px 10px 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* PROJECTS SECTION ENDS HERE !!! */

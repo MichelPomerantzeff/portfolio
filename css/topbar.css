@@ -1,0 +1,212 @@
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #363945;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 3px 3px 5px rgb(85, 84, 84);
+    z-index: 10;
+}
+
+.topbar-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+
+.button-pushable {
+    position: relative;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    transition: filter 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin: 0 10px;
+}
+
+.button-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: hsl(0deg 0% 0% / 0.25);
+    will-change: transform;
+    transform: translateY(2px);
+    transition:
+        transform 600ms cubic-bezier(.3, .7, .4, 1);
+}
+
+
+.button-pushable:hover {
+    filter: brightness(110%);
+    -webkit-filter: brightness(110%);
+}
+
+.button-pushable:hover .button-front {
+    transform: translateY(-5.5px);
+    transition:
+        transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-pushable:active .button-front {
+    transform: translateY(-2px);
+    transition: transform 34ms;
+}
+
+.button-pushable:hover .button-shadow {
+    transform: translateY(3px);
+    transition:
+        transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-pushable:active .button-shadow {
+    transform: translateY(1px);
+    transition: transform 34ms;
+}
+
+.button-pushable:focus:not(:focus-visible) {
+    outline: none;
+}
+
+.homeButton-edge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: linear-gradient(to left,
+            #1f2027 0%,
+            #363945 8%,
+            #292c35 92%,
+            #191b20 100%);
+}
+
+.homeButton-front {
+    border: solid 1px #444855;
+    display: block;
+    padding: 4px 10px;
+    border-radius: 8px;
+    color: white;
+    background: #363945;
+    transform: translateY(-4px);
+}
+
+.cv-edge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: linear-gradient(to left,
+            rgb(70, 69, 69) 0%,
+            rgb(206, 201, 201) 8%,
+            rgb(192, 191, 191) 92%,
+            rgb(70, 69, 69) 100%);
+}
+
+.cv-front {
+    border: solid 1px rgb(189, 189, 189);
+    display: block;
+    padding: 7px 11px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    color: #363945;
+    background: lightgray;
+    transform: translateY(-4px);
+}
+
+.initials {
+    font-size: 2.4rem;
+}
+
+.scrollTags {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    font-size: 1.5rem;
+}
+
+.topbarScrollTo {
+    margin: 0 25px;
+    cursor: pointer;
+}
+
+.topbarScrollTo:hover {
+    color: var(--mainColor);
+}
+
+.contactIcons {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.contactIcons>a {
+    text-decoration: none;
+    color: white;
+}
+
+.icon {
+    margin: 0 20px;
+    cursor: pointer;
+    font-size: 2.2rem;
+}
+
+
+.linkedin:hover {
+    color: #0074D9;
+    transform: translateY(-2.5px);
+    transition: ease .2s;
+}
+
+.linkedin:active {
+    transform: translateY(2.5px);
+    transition: ease .2s;
+}
+
+.whatsapp:hover {
+    color: rgb(138, 212, 26);
+    border-radius: 50%;
+    transform: translateY(-2.5px);
+    transition: ease .2s;
+}
+
+.whatsapp:active {
+    transform: translateY(2.5px);
+    transition: ease .2s;
+}
+
+.github:hover {
+    color: purple;
+    transform: translateY(-2.5px);
+    transition: ease .2s;
+}
+
+.github:active {
+    transform: translateY(2.5px);
+    transition: ease .2s;
+}
+
+.email:hover {
+    color: black;
+    transform: translateY(-2.5px);
+    transition: ease .2s;
+}
+
+.email:active {
+    transform: translateY(2.5px);
+    transition: ease .2s;
+}

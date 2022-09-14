@@ -1,0 +1,110 @@
+/* MAX WIDTH 600 STARTS HERE !!! */
+
+@media (max-width:380px) {
+
+    .cv-front {
+        padding: 4px 7px;
+        font-size: .75rem;
+    }
+
+    .scrollTags{
+        font-size: .7rem;
+    }
+
+    .topbarScrollTo {
+        margin: 0 7px;
+    }
+
+    .icon {
+        margin: 0 10px;
+        font-size: 1.2rem;
+    }
+    /* END OF TOPBAR  */
+
+    .home-intro {
+        font-size: 1.2rem;
+    }
+
+    .scrollButtons{
+        padding: 15px;
+    }
+
+    .scroll {
+        padding: 6px 8px;
+        font-size: .7rem;
+        margin: 0 5px;
+    }
+
+    .down {
+        font-size: 2.6rem;
+    }
+
+    /* END OF HOME  */
+
+
+    .about-wrapper {
+        font-size: .75rem;
+    } 
+
+    .aboutImg {
+        width: 100px;
+    }
+    /* END OF ABOUT  */
+
+    
+    .project-button {
+        padding: 10px;
+    }
+    /* END OF PROJECTS  */
+    
+    .project-button {
+        padding: 8.5px;
+        font-size: .65rem;
+    }
+
+    .project-description>h4 {
+        font-size: 1rem;
+    }
+
+    .project-summary {
+        font-size: .65rem;
+    }
+    
+    .descriptionField {
+        font-size: .65rem;
+
+    }
+    /* END OF PROJECTS  */
+
+    .form-input {
+        font-size: .8rem;
+        padding: 8px;
+    }
+
+    .send {        
+        width: 60px;
+        padding: 7px;
+        font-size: .8rem;
+    }
+    /* END OF CONTACT  */
+    
+    
+    .footerIcon {
+        font-size: 1.5rem;
+    }
+
+    .copyRight{
+        font-size: .7rem;
+    }
+    
+    /* END OF FOOTER  */
+
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+
+}
+
+/* MAX WIDTH 600 ENDS HERE !!! */

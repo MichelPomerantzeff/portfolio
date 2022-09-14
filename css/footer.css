@@ -1,0 +1,85 @@
+/* FOOTER SECTION STARTS HERE !!! */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #363945;
+    height: 35vh;
+}
+
+.upArrow {
+    height: 100px;
+}
+
+.fa-circle-chevron-up {
+    width: 60px;
+    color: white;
+    font-size: 4rem;
+    height: 65px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.fa-circle-chevron-up:hover {
+    transform: translateY(-3px);
+    transition: transform .2s ease-in;
+    box-shadow: 2px 2px 2px 0px rgb(73, 73, 73);
+
+}
+
+.fa-circle-chevron-up:active {
+    transform: translateY(0);
+    box-shadow: none;
+    margin: 10px;
+}
+
+
+.footerIcons {
+    display: flex;
+    align-items: center;
+}
+
+.footerIcon {
+    margin-left: 25px;
+    margin-right: 25px;
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+}
+
+.footerIcons>a {
+    text-decoration: none;
+}
+
+.footerIcon:hover {
+    margin-bottom: 5px;
+
+}
+
+.footerIcon:active {
+    margin-bottom: 0;
+}
+
+.footerLinkedin:hover {
+    color: #0074D9;
+}
+
+.footerWhatsapp:hover {
+    color: greenyellow;
+}
+
+.footerGithub:hover {
+    color: purple;
+}
+
+.footerEmail:hover {
+    color: black;
+}
+
+.copyRight {
+    color: white;
+    font-style: italic;
+}
+
+/* FOOTER SECTION ENDS HERE !!! */

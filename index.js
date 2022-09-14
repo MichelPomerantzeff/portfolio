@@ -40,7 +40,7 @@ topbarProject.addEventListener("click", () => {
 // Scroll to Contact section
 const topbarContact = document.querySelector(".topbarContact")
 const btnContact = document.querySelector(".toContact")
-const contact = document.querySelector(".contact")
+const contact = document.querySelector(".contact-container")
 
 btnContact.addEventListener("click", () => {
     contact.scrollIntoView({ behavior: "smooth", block: "center" })

@@ -1,0 +1,140 @@
+/* MAX WIDTH 600 STARTS HERE !!! */
+
+@media (max-width:650px) {
+
+    .homeBtn{
+        display: none;
+    }
+
+    .cv-front {
+        padding: 4px 9px;
+        font-size: .8rem;
+    }
+
+    .scrollTags{
+        font-size: .8rem;
+    }
+
+    .topbarScrollTo {
+        margin: 0 7px;
+    }
+
+    .contactIcons {
+        display: none;
+    }
+    /* END OF TOPBAR  */
+
+    .home-intro {
+        font-size: 1.6rem;
+    }
+
+    .scrollButtons{
+        padding: 20px;
+    }
+
+    .scroll {
+        padding: 8px 10px;
+        font-size: .8rem;
+        margin: 0 8px;
+    }
+
+    .down {
+        font-size: 2.6rem;
+    }
+
+    /* END OF HOME  */
+ 
+    .about-wrapper {
+        font-size: .9rem;
+    } 
+
+    .aboutImg {
+        margin: 20px auto;
+        width: 130px;
+    }
+    /* END OF ABOUT  */
+
+    .icons-wrapper{
+        gap: 40px;
+        width: 400px;
+    }
+    
+    .icon-box {
+        font-size: .8rem;
+    }
+
+    .skillIcon {
+        width: 30px;
+    }   
+    
+    /* END OF SKILLS  */
+    
+    .project-wrapper {
+        width: 90%;
+        max-width: 500px;
+    }
+    
+    .project-img>img {
+        width: 100%;
+    }
+    
+    .project-button {
+        padding: 12px;
+        font-size: .7rem;
+    }
+
+    .project-description>h4 {
+        font-size: 1.2rem;
+    }
+
+    .project-summary {
+        font-size: .8rem;
+    }
+    
+    .descriptionField {
+        font-size: .8rem;
+
+    }
+    /* END OF PROJECTS  */
+
+    .form-input {
+        font-size: .9rem;
+        margin: 5px;
+    }
+
+    .send {        
+        width: 70px;
+        padding: 8px;
+        font-size: .9rem;
+    }
+    /* END OF CONTACT  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+
+
+
+
+
+    .sendName,
+    .sendMail,
+    .sendMessage {
+        width: 250px;
+    }
+}
+
+/* MAX WIDTH 600 ENDS HERE !!! */   

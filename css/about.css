@@ -1,0 +1,44 @@
+/* ABOUT SECTION STARTS HERE !!! */
+
+.aboutBox {
+    background-image: radial-gradient(100% 100% at 100% 0, var(--soft-mainColor) 0, var(--mainColor) 100%);
+    color: white; 
+    min-height: 80vh;
+    text-shadow: 2px 2px 2px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.aboutDescription {
+    /* background-color: red; */
+    padding: 20px;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-profile-image{
+    /* background-color: red; */
+    width: 25%;
+}
+
+.aboutImg {
+    box-shadow: 0 0 5px 2px white;
+    display: flex;
+    margin: auto;
+    border-radius: 50%;
+    max-width: 300px;
+    width: 70%;
+}
+
+/* ABOUT SECTION ENDS HERE !!! */
