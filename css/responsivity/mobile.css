@@ -1,6 +1,6 @@
 /* MAX WIDTH 600 STARTS HERE !!! */
 
-@media (max-width:380px) {
+@media (max-width:420px) {
 
     .cv-front {
         padding: 4px 7px;
@@ -52,14 +52,19 @@
     /* END OF ABOUT  */
 
     
-    .project-button {
-        padding: 10px;
-    }
-    /* END OF PROJECTS  */
+    /* PROJECTS STARTS  */
     
+    .project-img img{
+        height: 200px;
+    }
+
+    .project-buttons-container{
+        margin: 5px;
+    }
+
     .project-button {
-        padding: 8.5px;
-        font-size: .65rem;
+        padding: 8px;
+        font-size: .6rem;
     }
 
     .project-description>h4 {
