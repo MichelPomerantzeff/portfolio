@@ -5,7 +5,7 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     background-color: #363945;
-    height: 35vh;
+    padding-top: 10px;
 }
 
 .upArrow {
@@ -38,11 +38,12 @@ footer {
 .footerIcons {
     display: flex;
     align-items: center;
+    padding: 50px;
+    gap: 50px;
+    transition: all .2s ease;
 }
 
 .footerIcon {
-    margin-left: 25px;
-    margin-right: 25px;
     cursor: pointer;
     font-size: 2rem;
     color: white;
@@ -53,12 +54,13 @@ footer {
 }
 
 .footerIcon:hover {
-    margin-bottom: 5px;
+    transform: translateY(-2px);
+    transition: all .2s ease;
 
 }
 
 .footerIcon:active {
-    margin-bottom: 0;
+    transform: translateY(2px);
 }
 
 .footerLinkedin:hover {
@@ -79,7 +81,8 @@ footer {
 
 .copyRight {
     color: white;
-    font-style: italic;
+    font-weight: 200;
+    padding: 10px;
 }
 
 /* FOOTER SECTION ENDS HERE !!! */

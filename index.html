@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/topbar.css">
@@ -15,13 +15,13 @@
     <link rel="stylesheet" href="./css/projects.css">
     <link rel="stylesheet" href="./css/contacts.css">
     <link rel="stylesheet" href="./css/footer.css">
-    
-    <!-- RESPOSIVITY -->
-    <link rel="stylesheet" href="./css/responsivity/midDesktop.css">
-    <link rel="stylesheet" href="./css/responsivity/laptop.css">
-    <link rel="stylesheet" href="./css/responsivity/bigTablet.css">
-    <link rel="stylesheet" href="./css/responsivity/tablet.css">
-    <link rel="stylesheet" href="./css/responsivity/mobile.css">
+
+    <!-- RESPOSIVENES -->
+    <link rel="stylesheet" href="./css/responsiveness/midDesktop.css">
+    <link rel="stylesheet" href="./css/responsiveness/laptop.css">
+    <link rel="stylesheet" href="./css/responsiveness/bigTablet.css">
+    <link rel="stylesheet" href="./css/responsiveness/tablet.css">
+    <link rel="stylesheet" href="./css/responsiveness/mobile.css">
 
     <!-- FONT-AWESOME -->>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -137,7 +137,7 @@
             </div>
 
         </div>
-        <!-- STARTS SECTION ENDS HERE -->
+        <!-- ABOUT SECTION ENDS HERE -->
 
 
 
@@ -175,13 +175,23 @@
                     </div>
 
                     <div class="icon-box">
+                        <img class="skillIcon " src="./techImages//jquery.png" alt="JQuery Image">
+                        <p>JQuery</p>
+                    </div>
+
+                    <div class="icon-box">
                         <img class="skillIcon bootstrap" src="./techImages//bootstrap.png" alt="React Image">
                         <p>Bootstrap</p>
                     </div>
 
                     <div class="icon-box">
-                        <img class="skillIcon " src="./techImages//jquery.png" alt="JQuery Image">
-                        <p>JQuery</p>
+                        <img class="skillIcon " src="./techImages//restAPI.png" alt="JQuery Image">
+                        <p>RESTful APIs</p>
+                    </div>
+
+                    <div class="icon-box">
+                        <img class="skillIcon " src="./techImages//firebase.png" alt="JQuery Image">
+                        <p>Firebase</p>
                     </div>
 
                     <div class="icon-box">
@@ -223,6 +233,57 @@
 
             <div class="allProjects">
 
+                <!-- E-COMMERCE -->
+
+                <div class="project-wrapper">
+
+                    <div class="project-img">
+                        <img src="./projectImages/ecommerce.png" alt="E-COMMERCE Image">
+                    </div>
+
+
+                    <div class="project-buttons-container">
+
+                        <a href="https://website-906a4.web.app/#/" target="_blank" rel="noopener" rel="noreferrer">
+                            <button class="project-button">
+                                Live Demo
+                            </button>
+                        </a>
+
+                        <a href="https://github.com/MichelPomerantzeff/website" target="_blank" rel="noopener"
+                            rel="noreferrer">
+                            <button class="project-button">
+                                Github Repo
+                            </button>
+                        </a>
+
+                    </div>
+
+
+                    <div class="project-description">
+
+                        <h3>E-Commerce</h3>
+
+                        <div class="techs-used">
+                            <div class="tech">React</div>
+                            <div class="tech">Hooks</div>
+                            <div class="tech">React Router</div>
+                            <div class="tech">Reducer</div>
+                            <div class="tech">Context API</div>
+                            <div class="tech">Firebase</div>
+                            <div class="tech">Stripe</div>
+                            <div class="tech">Styled-Components</div>
+                        </div>
+                        <div class="descriptionField">
+                            <p>
+                                A Fullstack E-Commerce website.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
                 <!-- MOVIE APP -->
 
                 <div class="project-wrapper">
@@ -237,14 +298,14 @@
                         <a href="https://michelpomerantzeff.github.io/movie-app/" target="_blank" rel="noopener"
                             rel="noreferrer">
                             <button class="project-button">
-                                View Live Demo
+                                Live Demo
                             </button>
                         </a>
 
                         <a href="https://github.com/MichelPomerantzeff/movie-app" target="_blank" rel="noopener"
                             rel="noreferrer">
                             <button class="project-button">
-                                View on Github
+                                Github Repo
                             </button>
                         </a>
 
@@ -252,28 +313,26 @@
 
 
                     <div class="project-description">
-                        <h4>Movie App</h4>
-                        <p class="project-summary">
-                            <strong>Movie App utilising React Hooks, Context API and Local Storage.</strong>
-                        </p>
+
+                        <h3>Movie App</h3>
+
+                        <div class="techs-used">
+                            <div class="tech">React</div>
+                            <div class="tech">Hooks</div>
+                            <div class="tech">React Router</div>
+                            <div class="tech">Reducer</div>
+                            <div class="tech">Context API</div>
+                            <div class="tech">OMDb API</div>
+                            <div class="tech">Local Storage</div>
+                            <div class="tech">Material UI</div>
+
+                        </div>
+
                         <div class="descriptionField">
-                            <li>
-                                This App allows the user to search for movies by name, check extended
-                                information about a movie, add movies to watchlist or watched movies and delete
-                                movies from a list.
-                            </li>
 
-                            <li>
-                                I used React Hooks to consume data from OMDb API as well as handle its states,
-                                Local Storage to store data of the movies added or deleted from the lists and
-                                Context API to access global states on multiple components throughout the whole
-                                application.
-                            </li>
+                            A Movie App that consumes the OMDb API.
 
-                            <li>
-                                Future implementation: Add a user's own rate and comment about movies that have
-                                been watched.
-                            </li>
+
                         </div>
                     </div>
 
@@ -295,14 +354,14 @@
                         <a href="https://michelpomerantzeff.github.io/linksaver-with-localStorage/" target="_blank"
                             rel="noopener" rel="noreferrer">
                             <button class="project-button">
-                                View Live Demo
+                                Live Demo
                             </button>
                         </a>
 
                         <a href="https://github.com/MichelPomerantzeff/linksaver-with-localStorage" target="_blank"
                             rel="noopener" rel="noreferrer">
                             <button class="project-button">
-                                View on Github
+                                Github Repo
                             </button>
                         </a>
 
@@ -310,78 +369,20 @@
 
 
                     <div class="project-description">
-                        <h4>Link Saver</h4>
-                        <p class="project-summary">
-                            <strong>Link Saver stores information of online products.</strong>
-                        </p>
+
+                        <h3>Link Saver</h3>
+
+                        <div class="techs-used">
+                            <div class="tech">React</div>
+                            <div class="tech">Hooks</div>
+                            <div class="tech">Local Storage</div>
+                        </div>
+
                         <div class="descriptionField">
-                            <li>
-                                On submit, the information is saved and rendered on the side bar with an edit
-                                and a delete
-                                button.
-                            </li>
-
-                            <li>
-                                Search and price filters make it easier for the user to reduce the list of
-                                products displayed or simply organize them better.
-                            </li>
-
-                            <li>
-                                I used Local Storage to store the data and React hooks to handle its state
-                                and display it on the browser.
-                            </li>
+                            I built this project to facilitate saving information of online products.
                         </div>
                     </div>
 
-                </div>
-
-
-
-                <!-- TRAVEL JOURNAL -->
-
-                <div class="project-wrapper">
-
-                    <div class="project-img">
-                        <img src="./projectImages/journal.png" alt="travelJournal Image">
-                    </div>
-
-                    <div class="project-buttons-container">
-                        <a href="https://michelpomerantzeff.github.io/traveljournal/" target="_blank" rel="noopener"
-                            rel="noreferrer">
-                            <button class="project-button">
-                                View Live Demo
-                            </button>
-                        </a>
-                        <a href="https://github.com/MichelPomerantzeff/traveljournal" target="_blank" rel="noopener"
-                            rel="noreferrer">
-                            <button class="project-button">
-                                View on Github
-                            </button>
-                        </a>
-                    </div>
-
-
-                    <div class="project-description">
-                        <h4>Travel Journal</h4>
-
-
-                        <p class="project-summary">
-                            <strong>Travel Journal containing information of places I have visited.</strong>
-                        </p>
-                        <div class="descriptionField">
-
-                            <li>
-                                Users can make their own travel journal, being able to add information about the
-                                places they have been to such as photos, date and description.
-                            </li>
-                            <li>
-                                The data is passed from parent to child through props therefore the code is neater
-                                as it is not necessary to write the same code repeatedly for each child component.
-                            </li>
-
-                        </div>
-
-                    </div>
                 </div>
 
 
@@ -397,41 +398,31 @@
                         <a href="https://michelpomerantzeff.github.io/Countdown/" target="_blank" rel="noopener"
                             rel="noreferrer">
                             <button class="project-button">
-                                View Live Demo
+                                Live Demo
                             </button>
                         </a>
                         <a href="https://github.com/MichelPomerantzeff/Countdown" target="_blank" rel="noopener"
                             rel="noreferrer">
                             <button class="project-button">
-                                View on Github
+                                Github Repo
                             </button>
                         </a>
                     </div>
 
-
                     <div class="project-description">
-                        <h4>Countdown</h4>
 
-                        <p class="project-summary">
-                            <strong>It decreases time from a pre-set time to zero.</strong>
-                        </p>
-                        <div class="descriptionField">
+                        <h3>Countdown</h3>
 
-                            <li>
-                                The set-time button displays arrows on the browser enabling the user to set the
-                                time and it only functions if the current time is equal to zero or time is paused.
-                            </li>
-
-                            <li>
-                                The start button hides the arrows, updates the time and switches to a pause
-                                button.
-                            </li>
-                            <li>
-                                The pause button stops the time, enables the set-time button to function again and
-                                switches back to start button.
-                            </li>
-
+                        <div class="techs-used">
+                            <div class="tech">HTML</div>
+                            <div class="tech">CSS</div>
+                            <div class="tech">JavaScript</div>
                         </div>
+
+                        <div class="descriptionField">
+                            This app decreases a pre set time untill it reaches zero.
+                        </div>
+
                     </div>
                 </div>
 
@@ -448,35 +439,30 @@
                         <a href="https://michelpomerantzeff.github.io/calculator/" target="_blank" rel="noopener"
                             rel="noreferrer">
                             <button class="project-button">
-                                View Live Demo
+                                Live Demo
                             </button>
                         </a>
                         <a href="https://github.com/MichelPomerantzeff/calculator" target="_blank" rel="noopener"
                             rel="noreferrer">
                             <button class="project-button">
-                                View on Github
+                                Github Repo
                             </button>
                         </a>
                     </div>
 
 
                     <div class="project-description">
-                        <h4>Calculator</h4>
 
-                        <p class="project-summary">
-                            <strong>Calculator with the basic equations.</strong>
-                        </p>
+                        <h3>Calculator</h3>
+
+                        <div class="techs-used">
+                            <div class="tech">HTML</div>
+                            <div class="tech">CSS</div>
+                            <div class="tech">JavaScript</div>
+                        </div>
+
                         <div class="descriptionField">
-
-                            <li>
-                                Standard Calculator functionality which offers basic operations and evaluates
-                                commands immediately as they are entered.
-                            </li>
-                            <li>
-                                Nice user interface with responsivity and well styled design.
-                            </li>
-
-
+                            Standard Calculator with the basic arithmetic operations.
                         </div>
 
                     </div>
@@ -503,10 +489,11 @@
                 <form action="https://formsubmit.co/michelpomerantzeff@gmail.com" method="POST">
 
                     <input class="input-name form-input" type="text" name="name" placeholder="Name" required>
-                    <input class="input-email form-input" type="email" name="email" placeholder="Email Address" required>
+                    <input class="input-email form-input" type="email" name="email" placeholder="Email Address"
+                        required>
                     <textarea class="input-message form-input" name="message" rows="6" placeholder="Message"
                         required></textarea>
-                        
+
                     <input type="hidden" name="_next" value="https://michelpomerantzeff.github.io/portfolio/">
 
                     <button class="send" type="submit">Send</button>
@@ -538,13 +525,14 @@
                 <a class="footerIcon footerEmail fa-solid fa-envelope" href="mailto:michelpomerantzeff@gmail.com"
                     target="_blank" rel="noopener" rel="noreferrer"></a>
             </div>
-            <span class="copyRight">&copy; Michel Pomerantzeff</span>
+            <span class="copyRight">&copy; Copyright 2022. Built by Michel Pomerantzeff</span>
         </footer>
         <!-- FOOTER SECTION ENDS HERE -->
 
     </main>
 
-    <script src="index.js"></script>
+    <script type="module" src="index.js"></script>
+
 </body>
 
 </html>

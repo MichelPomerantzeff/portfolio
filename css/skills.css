@@ -2,11 +2,10 @@
 
 
 .skillsBox {
-    min-height: 80vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
+    padding: 50px 0;
 }
 
 .skills-container {
@@ -16,6 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 150px 0;
 }
 
 .icons-wrapper{
@@ -23,8 +23,8 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 120px;
-    width: 900px;
+    gap: 100px;
+    width: 1000px;
 }
 
 .icon-box {

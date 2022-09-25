@@ -3,15 +3,16 @@
 .aboutBox {
     background-image: radial-gradient(100% 100% at 100% 0, var(--soft-mainColor) 0, var(--mainColor) 100%);
     color: white; 
-    min-height: 80vh;
     text-shadow: 2px 2px 2px black;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    padding: 50px 0;
 }
 
 .about-wrapper {
+    /* border: solid 1px; */
+    padding: 50px;
     flex: 1;
     display: flex;
     justify-content: center;

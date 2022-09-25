@@ -71,7 +71,7 @@
     
     .project-wrapper {
         width: 90%;
-        max-width: 500px;
+        max-width: 400px;
     }
     
     .project-img>img {
@@ -79,7 +79,6 @@
     }
     
     .project-button {
-        padding: 12px;
         font-size: .7rem;
     }
 
