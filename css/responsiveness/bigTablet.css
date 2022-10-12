@@ -2,10 +2,6 @@
 
 @media (max-width: 900px) {
 
-    .topbar {
-        height: 65px;
-    }
-
     .initials {
         font-size: 1.5rem;
     }
@@ -18,11 +14,7 @@
     .scrollTags {
         font-size: .8rem;
     }
-
-    .topbarScrollTo {
-        margin: 0 5px;
-    }
-
+    
     .icon {
         margin: 0 10px;
         font-size: 1.2rem;

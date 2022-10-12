@@ -2,14 +2,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
     background-color: #363945;
     color: white;
     position: fixed;
     top: 0;
-    width: 100%;
+    left: 0;
+    right: 0;
     box-shadow: 3px 3px 5px rgb(85, 84, 84);
-    z-index: 10;
+    padding: 7px;
 }
 
 .topbar-container {
@@ -137,10 +137,10 @@
     align-items: center;
     margin: auto;
     font-size: 1.5rem;
+    gap: 25px;
 }
 
 .topbarScrollTo {
-    margin: 0 25px;
     cursor: pointer;
     transition: .1s ease;
 }
