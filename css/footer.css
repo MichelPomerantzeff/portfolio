@@ -8,37 +8,29 @@ footer {
     padding-top: 10px;
 }
 
-.upArrow {
-    height: 100px;
+.upArrow{
+    font-size: 3.5rem;
+    padding: 20px;
 }
 
 .fa-circle-chevron-up {
-    width: 60px;
     color: white;
-    font-size: 4rem;
-    height: 65px;
-    margin: 10px;
-    border-radius: 50%;
+    transition: .2s all;
 }
 
 .fa-circle-chevron-up:hover {
-    transform: translateY(-3px);
-    transition: transform .2s ease-in;
-    box-shadow: 2px 2px 2px 0px rgb(73, 73, 73);
-
+    transform: scale(1.05) translateY(-3px);   
 }
 
 .fa-circle-chevron-up:active {
     transform: translateY(0);
-    box-shadow: none;
-    margin: 10px;
 }
 
 
 .footerIcons {
     display: flex;
     align-items: center;
-    padding: 50px;
+    padding: 30px;
     gap: 50px;
     transition: all .2s ease;
 }
@@ -81,8 +73,11 @@ footer {
 
 .copyRight {
     color: white;
+    border-top: solid 1px gray;
     font-weight: 200;
-    padding: 10px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
 }
 
 /* FOOTER SECTION ENDS HERE !!! */

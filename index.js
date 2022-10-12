@@ -52,9 +52,9 @@ topbarContact.addEventListener("click", () => {
 
 // Scroll page to bottom
 const footer = document.querySelector("footer")
-const down = document.querySelector(".down")
+const downArrow = document.querySelector(".downArrow")
 
-down.addEventListener("click", () => {
+downArrow.addEventListener("click", () => {
     footer.scrollIntoView({ behavior: "smooth", block: "center" })
 })
 

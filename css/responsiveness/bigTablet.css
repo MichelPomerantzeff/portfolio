@@ -30,11 +30,11 @@
 
     /* END OF TOPBAR  */
 
-    .home-intro {
+    .home_intro {
         font-size: 2.5rem;
     }
 
-    .scrollButtons{
+    .scrollButtons {
         padding: 30px;
     }
 
@@ -43,18 +43,22 @@
         font-size: .9rem;
     }
 
-    .arrow {
+    .downArrow{
+        padding: 30px;
+        font-size: 3rem;
+    }
+    .upArrow {
         font-size: 3rem;
     }
 
     /* END OF HOME  */
-    
+
     .about-wrapper {
         flex-direction: column;
         justify-content: space-evenly;
-    }   
+    }
 
-    .about-profile-image{
+    .about-profile-image {
         width: 100%;
     }
 
@@ -66,27 +70,30 @@
     .aboutDescription {
         width: 90%;
     }
+
     /* END OF ABOUT  */
 
 
-    .icons-wrapper{
+    .icons-wrapper {
         gap: 60px;
         width: 500px;
     }
-    
+
     .icon-box {
         font-size: .8rem;
     }
-    
+
     .skillIcon {
         width: 45px;
     }
+
     /* END OF SKILLS  */
 
     .form-input {
         font-size: 1rem;
         border-radius: 5px;
     }
+
     /* END OF CONTACT  */
 
 
@@ -103,7 +110,7 @@
 
 
 
-  
+
 
 }
 

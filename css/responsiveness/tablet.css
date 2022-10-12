@@ -2,6 +2,10 @@
 
 @media (max-width:650px) {
 
+    .home {
+        gap: 10px;
+    }
+
     .homeBtn{
         display: none;
     }
@@ -24,7 +28,7 @@
     }
     /* END OF TOPBAR  */
 
-    .home-intro {
+    .home_intro {
         font-size: 1.6rem;
     }
 
@@ -38,8 +42,12 @@
         margin: 0 8px;
     }
 
-    .down {
-        font-size: 2.6rem;
+    .downArrow{
+        font-size: 2.5rem;
+    }
+    .upArrow {
+        font-size: 2.5rem;
+        padding: 10px;
     }
 
     /* END OF HOME  */

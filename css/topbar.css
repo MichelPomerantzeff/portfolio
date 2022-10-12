@@ -142,10 +142,12 @@
 .topbarScrollTo {
     margin: 0 25px;
     cursor: pointer;
+    transition: .1s ease;
 }
 
 .topbarScrollTo:hover {
     color: var(--mainColor);
+    transition: .1s ease;
 }
 
 .contactIcons {
@@ -169,44 +171,51 @@
 .linkedin:hover {
     color: #0074D9;
     transform: translateY(-2.5px);
-    transition: ease .2s;
+    transition: ease .1s;
 }
 
 .linkedin:active {
     transform: translateY(2.5px);
-    transition: ease .2s;
+    transition: ease .1s;
 }
 
 .whatsapp:hover {
     color: rgb(138, 212, 26);
     border-radius: 50%;
     transform: translateY(-2.5px);
-    transition: ease .2s;
+    transition: ease .1s;
 }
 
 .whatsapp:active {
     transform: translateY(2.5px);
-    transition: ease .2s;
+    transition: ease .1s;
 }
 
 .github:hover {
     color: purple;
     transform: translateY(-2.5px);
-    transition: ease .2s;
+    transition: ease .1s;
 }
 
 .github:active {
     transform: translateY(2.5px);
-    transition: ease .2s;
+    transition: ease .1s;
 }
 
 .email:hover {
     color: black;
     transform: translateY(-2.5px);
-    transition: ease .2s;
+    transition: ease .1s;
 }
 
 .email:active {
     transform: translateY(2.5px);
-    transition: ease .2s;
+    transition: ease .1s;
+}
+
+.linkedin,
+.whatsapp,
+.github,
+.email{
+    transition: .1s ease;
 }
