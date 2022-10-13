@@ -30,13 +30,6 @@
     display: flex;
     flex-direction: column;
     width: 400px;
-    transition: all .2s ease;
-}
-
-.project-wrapper:hover {
-    transform: translateY(-3px);
-    box-shadow: -2px 2px 7px 0px black;
-    transition: all .2s ease;
 }
 
 .project-img>img {
