@@ -1,28 +1,23 @@
-/* MAX WIDTH 600 STARTS HERE !!! */
+/* MAX WIDTH 650 STARTS HERE !!! */
 
 @media (max-width:650px) {
 
-    .home {
-        gap: 10px;
+    .topbar {
+        padding: 8px 10px;
     }
 
     .homeBtn{
         display: none;
     }
 
-    .cv-front {
-        padding: 4px 9px;
-        font-size: .8rem;
-    }
-
-    .scrollTags{
-        font-size: .8rem;
-    }
-
-    .contactIcons {
+    .hide_mobile {
         display: none;
     }
     /* END OF TOPBAR  */
+
+    .home {
+        gap: 10px;
+    }
 
     .home_intro {
         font-size: 1.6rem;
@@ -113,31 +108,7 @@
     /* END OF CONTACT  */
 
 
-
-
-
-
-
-
-
-
-
-
-
     .section-title {
         font-size: 2.5rem;
     }
-
-
-
-
-
-
-    .sendName,
-    .sendMail,
-    .sendMessage {
-        width: 250px;
-    }
 }
-
-/* MAX WIDTH 600 ENDS HERE !!! */   

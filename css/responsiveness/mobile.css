@@ -3,7 +3,7 @@
 @media (max-width:420px) {
 
     .cv-front {
-        padding: 4px 7px;
+        padding: 2px 5px;
         font-size: .75rem;
     }
 
@@ -11,10 +11,6 @@
         font-size: .7rem;
     }
 
-    .icon {
-        margin: 0 10px;
-        font-size: 1.2rem;
-    }
     /* END OF TOPBAR  */
 
     .home_intro {
@@ -93,10 +89,6 @@
     }
     /* END OF CONTACT  */
     
-    
-    .footerIcon {
-        font-size: 1.5rem;
-    }
 
     .copyRight{
         font-size: .7rem;

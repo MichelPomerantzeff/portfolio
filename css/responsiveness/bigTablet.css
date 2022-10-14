@@ -1,23 +1,23 @@
-/* MAX WIDTH 1000 STARTS HERE !!! */
+/* MAX WIDTH 900 STARTS HERE !!! */
 
 @media (max-width: 900px) {
 
     .initials {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
 
     .cv-front {
-        padding: 3px 7px;
-        font-size: .7rem;
+        font-size: .8rem;
     }
 
     .scrollTags {
         font-size: .8rem;
+        gap: 15px;
     }
-    
-    .icon {
-        margin: 0 10px;
-        font-size: 1.2rem;
+
+    .contactIcons {
+        gap: 20px;
+        font-size: 1.5rem;
     }
 
     /* END OF TOPBAR  */
@@ -35,10 +35,11 @@
         font-size: .9rem;
     }
 
-    .downArrow{
+    .downArrow {
         padding: 30px;
         font-size: 3rem;
     }
+
     .upArrow {
         font-size: 3rem;
     }
@@ -90,6 +91,11 @@
     /* END OF CONTACT  */
 
 
+    .footer_icons{
+        padding: 20px;
+    }
+    
+    /* END OF FOOTER  */
 
 
 

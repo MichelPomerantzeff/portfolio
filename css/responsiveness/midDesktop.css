@@ -1,26 +1,6 @@
-/* MAX WIDTH 1600 STARTS HERE !!! */
+/* MAX WIDTH 1600 */
 
 @media (max-width:1500px) {
-
-    .initials{
-        font-size: 2.1rem;
-    }
-
-    .cv-front {
-        padding: 5px 9px;
-        font-size: .9rem;
-    }
-
-    .scrollTags{
-        font-size: 1.3rem;
-    }
-
-    .icon {
-        margin: 0 15px;
-        font-size: 2rem;
-    }
-    /* END OF TOPBAR  */
-    
 
     .about-wrapper {
         font-size: 1.5rem;
@@ -33,4 +13,4 @@
 
 }
 
-/* MAX WIDTH 1600 ENDS HERE !!! */
+/* MAX WIDTH 1600 */

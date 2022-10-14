@@ -2,23 +2,25 @@
 
 @media (max-width:1200px) {
 
-    .initials{
-        font-size: 1.9rem;
+    .initials {
+        font-size: 2rem;
     }
 
     .cv-front {
-        padding: 4px 8px;
-        font-size: .8rem;
+        padding: 3px 7px;
+        font-size: .9rem;
     }
 
-    .scrollTags{
-        font-size: 1.1rem;
+    .scrollTags {
+        font-size: 1rem;
+        gap: 25px;
     }
 
-    .icon {
-        margin: 0 10px;
-        font-size: 1.6rem;
+    .contactIcons {
+        gap: 30px;
+        font-size: 1.7rem;
     }
+
     /* END OF TOPBAR  */
     
     .home_intro {
@@ -50,10 +52,14 @@
         font-size: 1.2rem;
     }
     /* END OF CONTACT  */
-
-
-
-
+    
+    
+    .footer_icons{
+        padding: 30px;
+    }
+    
+    /* END OF FOOTER  */
+    
 
 
 
