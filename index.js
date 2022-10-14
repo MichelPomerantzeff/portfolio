@@ -2,12 +2,23 @@
 const topbarAbout = document.querySelector(".topbarAbout")
 const aboutBtn = document.querySelector(".toAbout")
 const aboutBox = document.querySelector(".aboutBox")
+const toggle = document.querySelector(".toggle")
+const interests = document.querySelector("#interests")
 
 aboutBtn.addEventListener("click", () => {
     aboutBox.scrollIntoView({ behavior: "smooth", block: "center" })
 })
 topbarAbout.addEventListener("click", () => {
     aboutBox.scrollIntoView({ behavior: "smooth", block: "center" })
+})
+toggle.addEventListener("click", () => {
+    if(toggle.innerHTML === "show more"){
+        toggle.innerHTML = "show less"
+        interests.classList.remove('interests')
+    } else {
+        toggle.innerHTML = "show more"
+        interests.classList.add('interests')
+    }
 })
 
 

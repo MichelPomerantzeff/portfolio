@@ -45,6 +45,11 @@
     .aboutImg {
         width: 100px;
     }
+
+    .toggle {
+        padding: 0 4px;
+      }
+
     /* END OF ABOUT  */
 
     

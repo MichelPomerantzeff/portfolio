@@ -31,6 +31,12 @@
     .about-wrapper {
         font-size: 1.2rem;
     }   
+
+    .toggle {
+        font-size: .7rem;
+        padding: 3px 8px;
+      }
+
     /* END OF ABOUT  */
         
     

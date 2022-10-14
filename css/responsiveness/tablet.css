@@ -51,6 +51,18 @@
         margin: 20px auto;
         width: 130px;
     }
+
+    .toggle {
+        border-radius: .1rem;
+        font-size: .65rem;
+        font-weight: 500;
+        padding: 1px 7px;
+      }
+
+      .toggle_button{
+        padding: 5px 0;
+    }
+
     /* END OF ABOUT  */
 
     .icons-wrapper{
