@@ -28,6 +28,9 @@ footer {
 
 .footer_icons{
     padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .copyRight {
@@ -39,4 +42,8 @@ footer {
     text-align: center;
 }
 
+.icons_title{
+    color: #fff;
+    text-align: center;
+}
 /* FOOTER SECTION ENDS HERE !!! */
