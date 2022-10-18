@@ -70,12 +70,10 @@ downArrow.addEventListener("click", () => {
 })
 
 
-
 // Scroll page to top
 const home = document.querySelector(".home")
 const upArrow = document.querySelector(".upArrow")
 const homeBtn = document.querySelector(".homeBtn")
-
 
 upArrow.addEventListener("click", () => {
     home.scrollIntoView({ behavior: "smooth", block: "center" })
