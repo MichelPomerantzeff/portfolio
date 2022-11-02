@@ -11,14 +11,25 @@
 }
 
 .name {
+    display: inline-block;
     font-style: italic;
     font-weight: 500;
     color: var(--mainColor);
+    animation: flipInX 1s ease-out 1.5s;
+    animation-fill-mode: forwards;
+    transform: scale(0);
 }
 
-.scrollButtons{
+.home_intro {
+    display: block;
+    animation: fadeIn 1.2s ease 1.2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.scrollButtons {
     display: flex;
-    padding: 10px; 
+    padding: 10px;
 }
 
 .scroll {
@@ -51,9 +62,38 @@
     box-shadow: #1d4074 0 0 0 1.5px inset, rgba(35, 52, 66, 0.4) 0 2px 4px, rgba(46, 75, 92, 0.3) 0 7px 13px -3px, #235da0 0 -3px 0 inset;
 }
 
-.downArrow{
-    padding: 50px;
+
+.toAbout {
+    animation: fadeIn .5s ease-in 1.2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.toSkill {
+    animation: fadeIn .5s ease-in 1.4s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.toProject {
+    animation: fadeIn .5s ease-in 1.6s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.toContact {
+    animation: fadeIn .5s ease-in 1.8s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.downArrow {
+    margin: 50px;
     font-size: 3.5rem;
+    cursor: pointer;
+    animation: bounceInDown 1.2s ease-out 1.8s;
+    animation-fill-mode: forwards;
+    transform: scale(0);
 }
 
 .fa-circle-chevron-down {
@@ -62,7 +102,7 @@
 }
 
 .fa-circle-chevron-down:hover {
-    transform: scale(1.05) translateY(-3px);   
+    transform: scale(1.05) translateY(-3px);
 }
 
 .fa-circle-chevron-down:active {

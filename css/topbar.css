@@ -8,6 +8,7 @@
     box-shadow: 3px 3px 5px rgb(85, 84, 84);
     padding: 8px 20px;
     z-index: 1;
+    animation: fadeInDown 1s ease;
 }
 
 .topbar-container {
@@ -15,7 +16,7 @@
     align-items: center;
 }
 
-.topbar_buttons_wrapper{
+.topbar_buttons_wrapper {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -151,12 +152,66 @@
     transition: .1s ease;
 }
 
+.topbarAbout {
+    animation: bounceInRight 1s ease;
+    animation-fill-mode: forwards;
+    transform: scale(0)
+}
+
+.topbarSkill {
+    animation: bounceInRight 1s ease .2s;
+    animation-fill-mode: forwards;
+    transform: scale(0)
+}
+
+.topbarProject {
+    animation: bounceInRight 1s ease .4s;
+    animation-fill-mode: forwards;
+    transform: scale(0)
+}
+
+.topbarContact {
+    animation: bounceInRight 1s ease .6s;
+    animation-fill-mode: forwards;
+    transform: scale(0)
+}
+
+
 .contactIcons {
     display: flex;
     align-items: center;
     gap: 30px;
     font-size: 2.2rem;
 }
+
+.hide_mobile .fa-linkedin {
+    display: inline-block;
+    animation: bounceInDown 1s ease .8s;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+}
+
+.hide_mobile .fa-whatsapp {
+    display: inline-block;
+    animation: bounceInDown 1s ease 1s;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+}
+
+.hide_mobile .fa-github {
+    display: inline-block;
+    animation: bounceInDown 1s ease 1.2s;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+}
+
+.hide_mobile .fa-envelope {
+    display: inline-block;
+    animation: bounceInDown 1s ease 1.4s;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+}
+
 
 .fa-linkedin,
 .fa-whatsapp,
