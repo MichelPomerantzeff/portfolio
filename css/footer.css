@@ -8,22 +8,22 @@ footer {
     padding-top: 10px;
 }
 
-.upArrow{
-    font-size: 3.5rem;
+.upArrow {
     margin: 20px;
+    font-size: 3.5rem;
+    cursor: pointer;
+}
+.upArrow:hover {
+    transform: scale(1.05) translateY(-2px);    
+}
+
+.upArrow:active {
+    transform: scale(.95) translateY(0);    
 }
 
 .fa-circle-chevron-up {
     color: white;
     transition: .2s all;
-}
-
-.fa-circle-chevron-up:hover {
-    transform: scale(1.05) translateY(-3px);   
-}
-
-.fa-circle-chevron-up:active {
-    transform: translateY(0);
 }
 
 .footer_icons{

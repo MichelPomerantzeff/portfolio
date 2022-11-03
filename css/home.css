@@ -95,18 +95,18 @@
     animation-fill-mode: forwards;
     transform: scale(0);
 }
+.downArrow:hover {
+    animation-fill-mode: none;
+    transform: scale(1.05) translateY(-2px);    
+}
+
+.downArrow:active {
+    transform: scale(.95) translateY(0);    
+}
 
 .fa-circle-chevron-down {
     color: #363945;
     transition: .2s all;
-}
-
-.fa-circle-chevron-down:hover {
-    transform: scale(1.05) translateY(-3px);
-}
-
-.fa-circle-chevron-down:active {
-    transform: translateY(0);
 }
 
 /* HOME SECTION ENDS HERE !!! */
