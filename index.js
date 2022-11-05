@@ -81,3 +81,31 @@ upArrow.addEventListener("click", () => {
 homeBtn.addEventListener("click", () => {
     home.scrollIntoView({ behavior: "smooth", block: "center" })
 })
+
+
+// Scroll reveal
+window.sr = new ScrollReveal();
+
+sr.reveal('.aboutDescription', { delay: 100, duration: 1000 });
+sr.reveal('.about-profile-image', { delay: 100, duration: 1000 });
+
+sr.reveal('.html', { delay: 500, duration: 1000 });
+sr.reveal('.css', { delay: 100, duration: 1000 });
+sr.reveal('.javascript', { delay: 300, duration: 1000 });
+sr.reveal('.react', { delay: 600, duration: 1000 });
+sr.reveal('.redux', { delay: 200, duration: 1000 });
+sr.reveal('.bootstrap', { delay: 400, duration: 1000 });
+sr.reveal('.restapi', { delay: 600, duration: 1000 });
+sr.reveal('.firebase', { delay: 200, duration: 1000 });
+sr.reveal('.nodejs', { delay: 400, duration: 1000 });
+sr.reveal('.python', { delay: 500, duration: 1000 });
+sr.reveal('.git', { delay: 100, duration: 1000 });
+sr.reveal('.github', { delay: 300, duration: 1000 });
+
+sr.reveal('.ecommerce', { delay: 100, duration: 1000 });
+sr.reveal('.movie-app', { delay: 200, duration: 1000 });
+sr.reveal('.linksaver', { delay: 300, duration: 1000 });
+sr.reveal('.clock', { delay: 400, duration: 1000 });
+sr.reveal('.coming-soon', { delay: 500, duration: 1000 });
+
+sr.reveal('.form-wrapper', { delay: 100, duration: 1000 });
