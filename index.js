@@ -86,6 +86,8 @@ homeBtn.addEventListener("click", () => {
 // Scroll reveal
 window.sr = new ScrollReveal();
 
+sr.reveal('.section-title', { delay: 100, duration: 1000 });
+
 sr.reveal('.aboutDescription', { delay: 100, duration: 1000 });
 sr.reveal('.about-profile-image', { delay: 100, duration: 1000 });
 

@@ -18,6 +18,7 @@
 .about-wrapper,
 .icons-wrapper,
 .project-wrapper,
-.form-wrapper {
+.form-wrapper,
+.section-title {
     visibility: hidden;
 }
