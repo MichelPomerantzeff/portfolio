@@ -4,10 +4,15 @@ const aboutBtn = document.querySelector(".toAbout")
 const aboutBox = document.querySelector(".aboutBox")
 const toggle = document.querySelector(".toggle")
 const interests = document.querySelector("#interests")
+const downArrow = document.querySelector(".downArrow")
 
 aboutBtn.addEventListener("click", () => {
     aboutBox.scrollIntoView({ behavior: "smooth", block: "center" })
 })
+downArrow.addEventListener("click", () => {
+    aboutBox.scrollIntoView({ behavior: "smooth", block: "center" })
+})
+
 topbarAbout.addEventListener("click", () => { aboutBox.scrollIntoView({ behavior: "smooth", block: "center" })})
 toggle.addEventListener("click", () => {
     if(toggle.innerHTML === "show more"){
@@ -56,15 +61,6 @@ btnContact.addEventListener("click", () => {
 })
 topbarContact.addEventListener("click", () => {
     contact.scrollIntoView({ behavior: "smooth", block: "center" })
-})
-
-
-// Scroll page to bottom
-const footer = document.querySelector("footer")
-const downArrow = document.querySelector(".downArrow")
-
-downArrow.addEventListener("click", () => {
-    footer.scrollIntoView({ behavior: "smooth", block: "center" })
 })
 
 
