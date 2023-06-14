@@ -14,11 +14,3 @@
     --mainColor: #0074D9;
     --soft-mainColor: #5ad9ff;
 }
-
-.about-wrapper,
-.icons-wrapper,
-.project-wrapper,
-.form-wrapper,
-.section-title {
-    visibility: hidden;
-}
