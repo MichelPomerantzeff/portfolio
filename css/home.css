@@ -2,7 +2,6 @@
     background: linear-gradient(to right, rgba(243, 243, 243, 0.8), rgba(248, 248, 248, 0.8)), url(../images/svg/common-bg.svg);
     background-position: center;
     height: 100vh;
-    position: relative;
 }
 
 .home-center {
@@ -10,7 +9,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
+    gap: 20px;
 }
 
 .name {
@@ -64,19 +64,23 @@
 }
 
 .down-arrow {
-    position: absolute;
     font-size: 3.5rem;
     cursor: pointer;
     animation: bounceInDown 1s ease-out 1.6s;
     animation-fill-mode: forwards;
-    bottom: 10%;
-    left: 50%;
-    transform: scale(0) translateY(-50%);
+    transform: scale(0);
+    position: relative;
+    height: 60px;
+    margin-top: 150px;
 }
 
 .fa-circle-chevron-down {
+    position: absolute;
     color: #292929;
     transition: .2s;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .fa-circle-chevron-down:hover {
@@ -138,6 +142,11 @@
 }
 
 @media (max-width: 900px) {
+
+    .home-center {
+        gap: 10px;
+    }
+
     .home_intro {
         font-size: 2.5rem;
     }
