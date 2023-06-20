@@ -116,11 +116,20 @@ footer {
         gap: 40px;
     }
 
-    .footer-about-description{
+    .footer-socials{
+        width: 60vw;
+    }
+
+    .social-icons{
+        gap: 0;
+    }
+
+    .footer-about-description {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 60vw;
+        text-align: center;
     }
 }
 
