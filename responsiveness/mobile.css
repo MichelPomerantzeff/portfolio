@@ -2,41 +2,6 @@
 
 @media (max-width:420px) {
 
-    .cv-front {
-        padding: 2px 5px;
-        font-size: .75rem;
-    }
-
-    .scrollTags{
-        font-size: .7rem;
-    }
-
-    /* END OF TOPBAR  */
-
-    .home_intro {
-        font-size: 1.2rem;
-    }
-
-    .scrollButtons{
-        padding: 15px;
-    }
-
-    .scroll {
-        padding: 6px 8px;
-        font-size: .7rem;
-        margin: 0 5px;
-    }
-
-    .downArrow{
-        font-size: 2rem;
-    }
-    .upArrow {
-        font-size: 2rem;
-        margin: 0px;
-    }
-
-    /* END OF HOME  */
-
 
     .about-wrapper {
         font-size: .75rem;

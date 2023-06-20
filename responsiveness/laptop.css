@@ -2,32 +2,6 @@
 
 @media (max-width:1200px) {
 
-    .initials {
-        font-size: 2rem;
-    }
-
-    .cv-front {
-        padding: 3px 7px;
-        font-size: .9rem;
-    }
-
-    .scrollTags {
-        font-size: 1rem;
-        gap: 25px;
-    }
-
-    .contactIcons {
-        gap: 30px;
-        font-size: 1.7rem;
-    }
-
-    /* END OF TOPBAR  */
-    
-    .home_intro {
-        font-size: 3rem;
-    }    
-    /* END OF HOME  */
-
     .about-wrapper {
         font-size: 1.2rem;
     }   

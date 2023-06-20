@@ -1,66 +1,60 @@
+// Scroll to Home section
+const topbarLogo = document.querySelector(".topbar-logo-container")
+const toHomeBtnTopbar = document.querySelector(".to-home")
+const toHomeBtn = document.querySelector(".toHome")
+const homeContainer = document.querySelector(".home")
+
+toHomeBtn.addEventListener("click", () => {
+    homeContainer.scrollIntoView({ behavior: "smooth", block: "start" })
+})
+toHomeBtnTopbar.addEventListener("click", () => {
+    homeContainer.scrollIntoView({ behavior: "smooth", block: "start" })
+})
+topbarLogo.addEventListener("click", () => {
+    homeContainer.scrollIntoView({ behavior: "smooth", block: "start" })
+})
+
+
 // Scroll to About section
-const topbarAbout = document.querySelector(".topbarAbout")
+const topbarAbout = document.querySelector(".to-about")
 const aboutBtn = document.querySelector(".toAbout")
-const aboutBox = document.querySelector(".aboutBox")
-const toggle = document.querySelector(".toggle")
+const aboutBox = document.querySelector(".about")
 const interests = document.querySelector("#interests")
-const downArrow = document.querySelector(".downArrow")
+const downArrow = document.querySelector(".down-arrow")
 
 aboutBtn.addEventListener("click", () => {
-    aboutBox.scrollIntoView({ behavior: "smooth", block: "center" })
+    aboutBox.scrollIntoView({ behavior: "smooth", block: "start" })
 })
 downArrow.addEventListener("click", () => {
-    aboutBox.scrollIntoView({ behavior: "smooth", block: "center" })
+    aboutBox.scrollIntoView({ behavior: "smooth", block: "start" })
 })
 
-// topbarAbout.addEventListener("click", () => { aboutBox.scrollIntoView({ behavior: "smooth", block: "center" })})
-// toggle.addEventListener("click", () => {
-//     if(toggle.innerHTML === "show more"){
-//         toggle.innerHTML = "show less"
-//         interests.classList.remove('interests')
-//     } else {
-//         toggle.innerHTML = "show more"
-//         interests.classList.add('interests')
-//     }
-// })
-
-
-// Scroll to Skilss section
-const topbarSkill = document.querySelector(".topbarSkill")
-const btnSkill = document.querySelector(".toSkill")
-const skillsBox = document.querySelector(".skillsBox")
-
-btnSkill.addEventListener("click", () => {
-    skillsBox.scrollIntoView({ behavior: "smooth", block: "center" })
-})
-topbarSkill.addEventListener("click", () => {
-    skillsBox.scrollIntoView({ behavior: "smooth", block: "center" })
-})
+topbarAbout.addEventListener("click", () => { aboutBox.scrollIntoView({ behavior: "smooth", block: "start" })})
 
 
 // Scroll to Projects section
-const topbarProject = document.querySelector(".topbarProject")
-const btnProject = document.querySelector(".toProject")
-const projectContainer = document.querySelector(".projectContainer")
+const topbarProjects = document.querySelector(".to-projects")
+const btnProjects = document.querySelector(".toProjects")
+const projectContainer = document.querySelector(".projects")
 
-btnProject.addEventListener("click", () => {
+btnProjects.addEventListener("click", () => {
     projectContainer.scrollIntoView({ behavior: "smooth", block: "start" })
 })
-topbarProject.addEventListener("click", () => {
+topbarProjects.addEventListener("click", () => {
     projectContainer.scrollIntoView({ behavior: "smooth", block: "start" })
 })
 
 
 // Scroll to Contact section
-const topbarContact = document.querySelector(".topbarContact")
+const topbarContact = document.querySelector(".to-contact")
 const btnContact = document.querySelector(".toContact")
-const contact = document.querySelector(".contact-container")
+const contact = document.querySelector(".contact")
 
 btnContact.addEventListener("click", () => {
-    contact.scrollIntoView({ behavior: "smooth", block: "center" })
+    contact.scrollIntoView({ behavior: "smooth", block: "start" })
 })
 topbarContact.addEventListener("click", () => {
-    contact.scrollIntoView({ behavior: "smooth", block: "center" })
+    contact.scrollIntoView({ behavior: "smooth", block: "start" })
 })
 
 
@@ -70,8 +64,8 @@ const upArrow = document.querySelector(".upArrow")
 const homeBtn = document.querySelector(".homeBtn")
 
 upArrow.addEventListener("click", () => {
-    home.scrollIntoView({ behavior: "smooth", block: "center" })
+    home.scrollIntoView({ behavior: "smooth", block: "start" })
 })
 homeBtn.addEventListener("click", () => {
-    home.scrollIntoView({ behavior: "smooth", block: "center" })
+    home.scrollIntoView({ behavior: "smooth", block: "start" })
 })

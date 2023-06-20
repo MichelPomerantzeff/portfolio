@@ -1,88 +1,134 @@
-/* ABOUT SECTION STARTS HERE !!! */
-
-.aboutBox {
-    background-image: radial-gradient(100% 100% at 100% 0, var(--soft-mainColor) 0, var(--mainColor) 100%);
-    color: white; 
-    text-shadow: 2px 2px 2px black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 0;
+.about {
+  padding: 120px 0;
 }
 
 .about-wrapper {
-    /* border: solid 1px; */
-    padding: 50px;
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
 }
 
-.aboutDescription {
-    /* background-color: red; */
-    padding: 20px;
-    width: 75%;
-    display: flex;
-    flex-direction: column;
+.intro-about-me, .skills {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 600px;
+  padding: 20px;
+  /* border: solid 1px red; */
 }
 
-/* .interests{
-  display: none;
-} */
-
-.toggle_button{
-    display: flex;
-    padding: 10px 0;
+.about-me-description {
+  color: #4e4e4e;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.toggle {
-  background-color: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: .25rem;
-  box-shadow: rgba(0, 0, 0, 0.288) 0 1px 3px 0;
-  box-sizing: border-box;
-  color: rgba(0, 0, 0, 0.664);
-  cursor: pointer;
-  display: inline-flex;
+.skills-wrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  color: #4e4e4e;
+}
+
+.skill {
+  background: rgb(230, 228, 228);
+  border-radius: 5px;
+  padding: 15px 20px;
   font-weight: 600;
-  padding: 5px 10px;
-  position: relative;
-  text-decoration: none;
-  transition: all 250ms;
-  width: auto;
 }
 
-.toggle:hover,
-.toggle:focus {
-  border-color: rgba(0, 0, 0, 0.15);
-  box-shadow: rgba(0, 0, 0, 0.301) 0 4px 12px;
+.cv-link {
+  color: var(--mainColor);
+  font-weight: bold;
 }
 
-.toggle:hover {
-  transform: translateY(-1px);
+
+@media (max-width:1500px) {
+    
 }
 
-.toggle:active {
-  background-color: #F0F0F1;
-  border-color: rgba(0, 0, 0, 0.15);
-  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
-  transform: translateY(0);
+@media (max-width:1200px) {
+    
 }
 
-.about-profile-image{
-    /* background-color: red; */
-    width: 25%;
+@media (max-width:900px) {
+  .about-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .skills-wrapper {
+    font-size: .8rem;
+  }
+
+  .skill {
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-weight: 600;
+  }
 }
 
-.aboutImg {
-    box-shadow: 0 0 5px 2px white;
-    display: flex;
-    margin: auto;
-    border-radius: 50%;
-    max-width: 300px;
-    width: 70%;
+
+@media (max-width:650px) {
+  
+  .about-wrapper {
+    gap: 30px;
+  }
+
+  .intro-about-me, .skills {
+    gap: 10px;
+    width: 450px;
+    padding: 20px;
+  }
+
+  .about-me-description {
+    line-height: 1.3;
+    font-size: 1rem;
+  }
+
+  .skills-wrapper {
+    font-size: .8rem;
+    gap: 10px;
+  }
+
+  .skill {
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-weight: 600;
+  }
+    
 }
 
-/* ABOUT SECTION ENDS HERE !!! */
+@media (max-width:480px) {
+    
+  .about-wrapper {
+    gap: 30px;
+  }
+
+  .intro-about-me, .skills {
+    width: 100vw;
+    gap: 10px;
+    padding: 20px;
+    /* border: solid 1px red; */
+  }
+
+  .about-me-description {
+    line-height: 1.3;
+    font-size: 1rem;
+  }
+
+  .skills-wrapper {
+    font-size: .8rem;
+  }
+
+  .skill {
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-weight: 600;
+  }
+}

@@ -1,52 +1,101 @@
-/* PROJECTS SECTION STARTS HERE !!! */
-
-.projectContainer h1 {
-    text-shadow: 2px 2px 2px black;
+.projects {
+    padding: 80px 0;
 }
 
-.projectContainer {
-    background-image: radial-gradient(100% 100% at 100% 0, var(--soft-mainColor) 0, var(--mainColor) 100%);
-    color: white;
+.projects-wrapper {
+    /* border: solid 1px black; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 50px 0;
+    padding: 120px 0;
+    gap: 120px;
 }
 
-.allProjects {
+.project {
+    /* border: solid 1px blue; */
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 50px 0;
+    align-items: center;
     gap: 20px;
+    width: 1300px;
 }
 
+.project:nth-child(even){
+    flex-direction: row-reverse;
+}
 
-.project-wrapper {
-    background-color: white;
-    border-radius: 10px;
-    color: black;
+.project-img {
+    /* border: solid 1px blue; */
+    flex: 1;
+}
+
+.project-img > img {
+    width: 100%;
+}
+
+.project-details {
+    background: rgb(236, 235, 235);
     display: flex;
     flex-direction: column;
-    width: 400px;
+    justify-content: space-between;
+    flex: 1;
+    max-width: 40%;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 50px 0;
+    gap: 20px;
+    /* border: solid 1px red; */
 }
 
-.project-img>img {
-    height: 220px;
-    width: 400px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+.project-title{
+    font-size: 1.5rem;
 }
 
-.project-buttons-container {
+.project-description {
+    font-weight: 400;
+}
+
+.tech-list{
+    /* border: solid 1px yellow; */
+    padding: 20px 0;
     display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin: 10px;
+    align-items: center;
+    font-size: .7rem;
+    flex-wrap: wrap;
+    list-style-type:none;
 }
 
-.project-buttons-container a{
+.tech{
+    border: solid 3px;
+    background: rgb(109, 108, 108);
+    color: white;
+    border-style: double;
+    padding: 2px 10px;
+}
+
+.project-buttons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+.live {
+    width: 25px;
+}
+
+.live > a > img {
+    width: 100%;
+}
+
+.repo {
+    width: 30px;
+}
+
+.repo > a > img {
+    width: 100%;
+}
+
+.project-buttons a{
     text-decoration: none;
 }
 
@@ -78,42 +127,68 @@
     box-shadow: #111c2c 0 0 0 1.5px inset, rgba(45, 57, 66, 0.4) 0 2px 4px, rgba(46, 75, 92, 0.3) 0 7px 13px -3px, #1c2530 0 -3px 0 inset;
 }
 
-.project-description {
-    flex: 1;
-    display: flex;
-    flex-direction: column;       
-}
-
-.techs-used{
-    /* background: yellow; */
-    display: flex;
-    align-items: center;
-    font-size: .7rem;
-    padding: 10px;
-    flex-wrap: wrap;
-}
-
-.tech{
-    border: solid 3px;
-    background: rgb(109, 108, 108);
-    color: white;
-    border-style: double;
-    padding: 2px 10px;
-}
-
-.project-description h3{
-    margin-left: 20px;
-}
-
-.descriptionField {
-    background-color: rgba(197, 194, 194, 0.267);
-    margin: 2px 10px 10px 10px;
-    padding: 10px;
-    border-radius: 5px;
-    font-weight: 400;
-}
-
 .coming_soon{
     width: 100%;
 }
-/* PROJECTS SECTION ENDS HERE !!! */
+
+
+@media (max-width:1500px) {
+    .project {
+        width: 1200px;
+    }
+}
+
+@media (max-width:1200px) {
+    .project {
+        width: 100vw;
+        padding: 0 40px;
+    }
+
+    .project-details {
+        padding: 20px;
+    }
+}
+
+@media (max-width:900px) {
+
+    .project {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .project:nth-child(even){
+        flex-direction: column;
+    }
+
+    .project-details {
+        max-width: 80%;
+        margin: 0;
+    }
+}
+
+
+@media (max-width:650px) {
+
+    .project {
+        padding: 0 10px;
+    }
+
+    .project-details {
+        gap: 10px;
+        max-width: 100%;
+    }
+    
+    .project-title{
+        font-size: 1.3rem;
+    }
+
+    .project-button{
+        padding: 5px 10px 8px 10px;
+        font-size: .8rem;
+        border-radius: 4px;
+    }
+}
+
+@media (max-width:480px) {
+    
+}

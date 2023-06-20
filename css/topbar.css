@@ -1,257 +1,157 @@
 .topbar {
-    background-color: #363945;
-    color: white;
+    box-shadow: 1px 1px 5px rgb(211, 208, 208);
+    background-color: white;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    box-shadow: 3px 3px 5px rgb(85, 84, 84);
-    padding: 8px 20px;
     z-index: 1;
-    animation: fadeInDown 1s ease;
 }
 
 .topbar-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 30px;
+    color: #333;
 }
 
-.topbar_buttons_wrapper {
+.topbar-logo-container {
     display: flex;
-    align-items: center;
     gap: 20px;
-}
-
-.button-pushable {
-    position: relative;
-    border: none;
-    background: transparent;
-    padding: 0;
+    align-items: center;
     cursor: pointer;
-    outline-offset: 4px;
-    transition: filter 250ms;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
+    transition: color .2s;
+    animation: fadeIn .2s ease .6s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
-.button-shadow {
-    position: absolute;
-    top: 0;
-    left: 0;
+.topbar-logo-container:hover {
+    color: var(--mainColor);
+}
+
+.topbar-logo-img-cont {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+    background-image: radial-gradient(100% 100% at 100% 0, #adacac 0, #333 100%);
+    transition: background-image 2s ease-in-out;
+}
+
+/* .topbar-logo-container:hover .topbar-logo-img-cont{
+    background-image: radial-gradient(100% 100% at 100% 0, var(--soft-mainColor) 0, var(--mainColor) 100%);
+} */
+
+
+.topbar-logo-img {
     width: 100%;
     height: 100%;
-    border-radius: 8px;
-    background: hsl(0deg 0% 0% / 0.25);
-    will-change: transform;
-    transform: translateY(2px);
-    transition:
-        transform 600ms cubic-bezier(.3, .7, .4, 1);
-}
-
-
-.button-pushable:hover {
-    filter: brightness(110%);
-    -webkit-filter: brightness(110%);
-}
-
-.button-pushable:hover .button-front {
-    transform: translateY(-5.5px);
-    transition:
-        transform 250ms cubic-bezier(.3, .7, .4, 1.5);
-}
-
-.button-pushable:active .button-front {
-    transform: translateY(-2px);
-    transition: transform 34ms;
-}
-
-.button-pushable:hover .button-shadow {
-    transform: translateY(3px);
-    transition:
-        transform 250ms cubic-bezier(.3, .7, .4, 1.5);
-}
-
-.button-pushable:active .button-shadow {
-    transform: translateY(1px);
-    transition: transform 34ms;
-}
-
-.button-pushable:focus:not(:focus-visible) {
-    outline: none;
-}
-
-.homeButton-edge {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-    background: linear-gradient(to left,
-            #1f2027 0%,
-            #363945 8%,
-            #292c35 92%,
-            #191b20 100%);
-}
-
-.homeButton-front {
-    border: solid 1px #444855;
+    object-fit: cover;
+    object-position: center;
     display: block;
-    padding: 0 8px;
-    border-radius: 8px;
-    color: white;
-    background: #363945;
-    transform: translateY(-4px);
 }
 
-.cv-edge {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-    background: linear-gradient(to left,
-            rgb(70, 69, 69) 0%,
-            rgb(206, 201, 201) 8%,
-            rgb(192, 191, 191) 92%,
-            rgb(70, 69, 69) 100%);
+.topbar-logo-sub {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
-.cv-front {
-    border: solid 1px rgb(189, 189, 189);
-    display: block;
-    padding: 5px 9px;
-    border-radius: 8px;
-    font-size: 1rem;
-    color: #363945;
-    background: lightgray;
-    transform: translateY(-4px);
-}
 
-.initials {
-    font-size: 2.2rem;
-}
-
-.scrollTags {
+.header-sections-container {
     display: flex;
     align-items: center;
-    margin: auto;
-    font-size: 1.2rem;
+    list-style-type:none;
     gap: 40px;
+    font-weight: 600;
+    font-size: 1.2rem;  
 }
 
-.topbarScrollTo {
+.scroll-to {
     cursor: pointer;
-    transition: .1s ease;
+    transition: color .2s;
 }
 
-.topbarScrollTo:hover {
+.scroll-to:hover {
     color: var(--mainColor);
-    transition: .1s ease;
 }
 
-.topbarAbout {
+.to-home {
     animation: bounceInRight 1s ease;
     animation-fill-mode: forwards;
     transform: scale(0)
 }
 
-.topbarSkill {
+.to-about {
     animation: bounceInRight 1s ease .2s;
     animation-fill-mode: forwards;
     transform: scale(0)
 }
 
-.topbarProject {
+.to-projects {
     animation: bounceInRight 1s ease .4s;
     animation-fill-mode: forwards;
     transform: scale(0)
 }
 
-.topbarContact {
+.to-contact {
     animation: bounceInRight 1s ease .6s;
     animation-fill-mode: forwards;
     transform: scale(0)
 }
 
-
-.contactIcons {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    font-size: 2.2rem;
+.mobile-menu {
+    display: none;
 }
 
-.hide_mobile .fa-linkedin {
-    display: inline-block;
-    animation: bounceInDown 1s ease .8s;
-    animation-fill-mode: forwards;
-    transform: scale(0);
+@media (max-width:1500px) {
+    
 }
 
-.hide_mobile .fa-whatsapp {
-    display: inline-block;
-    animation: bounceInDown 1s ease 1s;
-    animation-fill-mode: forwards;
-    transform: scale(0);
+@media (max-width:1200px) {
+    
 }
 
-.hide_mobile .fa-github {
-    display: inline-block;
-    animation: bounceInDown 1s ease 1.2s;
-    animation-fill-mode: forwards;
-    transform: scale(0);
-}
+@media (max-width:900px) {
 
-.hide_mobile .fa-envelope {
-    display: inline-block;
-    animation: bounceInDown 1s ease 1.4s;
-    animation-fill-mode: forwards;
-    transform: scale(0);
-}
+    .topbar-container {
+        padding: 10px 20px;
+    }
 
+    .topbar-logo-container {
+        gap: 10px;
+    }
+    
+    .topbar-logo-img-cont {
+        width: 40px;
+        height: 40px;
+    }
 
-.fa-linkedin,
-.fa-whatsapp,
-.fa-github,
-.fa-envelope {
-    color: #fff;
-    cursor: pointer;
-    text-decoration: none;
-}
+    .topbar-logo-sub {
+        font-size: 1rem;
+    }
 
-.fa-linkedin:active,
-.fa-whatsapp:active,
-.fa-github:active,
-.fa-envelope:active {
-    transform: translateY(2.5px);
-    transition: ease .1s;
-}
+    .header-sections-container {
+        gap: 30px;
+        font-size: .9rem;  
+    }
 
-.fa-linkedin:hover,
-.fa-whatsapp:hover,
-.fa-github:hover,
-.fa-envelope:hover {
-    transform: translateY(-2.5px);
-    transition: ease .1s;
-}
-
-.fa-linkedin:hover {
-    color: #0074D9;
-}
-
-.fa-whatsapp:hover {
-    color: rgb(138, 212, 26);
 }
 
 
+@media (max-width:650px) {
+    .header-sections-container {
+        display: none;
+    }
 
-.fa-github:hover {
-    color: purple;
+    .mobile-menu {
+        display: block;
+    }
 }
 
-.fa-envelope:hover {
-    color: black;
+@media (max-width:480px) {
+    
 }
