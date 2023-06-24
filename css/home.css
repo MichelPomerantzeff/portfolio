@@ -51,7 +51,7 @@
     opacity: 0;
 }
 
-.toProject {
+.toProjects {
     animation: fadeIn .5s ease-in .6s;
     animation-fill-mode: forwards;
     opacity: 0;
