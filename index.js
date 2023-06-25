@@ -1,3 +1,21 @@
+// Drop Sidebar
+const sidebar = document.querySelector(".sidebar")
+const menuBtn = document.querySelector(".mobile-menu")
+const menuImage = document.querySelector(".mobile-menu img");
+
+menuBtn.addEventListener("click", () => {
+    if(sidebar.classList.value.includes("hidden")) {
+        sidebar.classList.remove('hidden')
+        sidebar.classList.add('show')
+        menuImage.src = `./images/svg/ham-menu-close.svg`;
+    } else {
+        sidebar.classList.remove('show')
+        sidebar.classList.add('hidden')
+        menuImage.src = `./images/svg/ham-menu.svg`;
+    }
+})
+
+
 // Scroll to Home section
 const topbarLogo = document.querySelector(".topbar-logo-container")
 const toHomeBtnTopbar = document.querySelector(".to-home")
@@ -9,6 +27,9 @@ toHomeBtn.addEventListener("click", () => {
 })
 toHomeBtnTopbar.addEventListener("click", () => {
     homeContainer.scrollIntoView({ behavior: "smooth", block: "start" })
+    sidebar.classList.remove('show')
+    sidebar.classList.add('hidden')
+    menuImage.src = `./images/svg/ham-menu.svg`;
 })
 topbarLogo.addEventListener("click", () => {
     homeContainer.scrollIntoView({ behavior: "smooth", block: "start" })
@@ -29,7 +50,12 @@ downArrow.addEventListener("click", () => {
     aboutBox.scrollIntoView({ behavior: "smooth", block: "start" })
 })
 
-topbarAbout.addEventListener("click", () => { aboutBox.scrollIntoView({ behavior: "smooth", block: "start" })})
+topbarAbout.addEventListener("click", () => { 
+    aboutBox.scrollIntoView({ behavior: "smooth", block: "start" })
+    sidebar.classList.remove('show')
+    sidebar.classList.add('hidden')
+    menuImage.src = `./images/svg/ham-menu.svg`;
+})
 
 
 // Scroll to Projects section
@@ -42,6 +68,9 @@ btnProjects.addEventListener("click", () => {
 })
 topbarProjects.addEventListener("click", () => {
     projectContainer.scrollIntoView({ behavior: "smooth", block: "start" })
+    sidebar.classList.remove('show')
+    sidebar.classList.add('hidden')
+    menuImage.src = `./images/svg/ham-menu.svg`;
 })
 
 
@@ -55,6 +84,9 @@ btnContact.addEventListener("click", () => {
 })
 topbarContact.addEventListener("click", () => {
     contact.scrollIntoView({ behavior: "smooth", block: "start" })
+    sidebar.classList.remove('show')
+    sidebar.classList.add('hidden')
+    menuImage.src = `./images/svg/ham-menu.svg`;
 })
 
 

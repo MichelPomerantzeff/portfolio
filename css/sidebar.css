@@ -1,0 +1,34 @@
+.sidebar{
+    top: -40vh;
+    height: 40vh;
+    width: 100vw;
+    position: fixed;
+    transition: .5s;
+    background: #fff;
+    z-index: 2;
+}
+
+.show{
+    transform: translateY(calc(100% + 60px));
+}
+.hidden{
+    transform: translateY(0);
+}
+
+.sidebar-wrapper{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 2rem;
+}
+
+.sidebar-navigate-to{
+    border: solid 1px #e4e1e1;
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    cursor: pointer;
+}

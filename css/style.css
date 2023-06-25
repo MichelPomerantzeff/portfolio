@@ -2,8 +2,9 @@
 
 * {
     margin: 0;
-    font-family: 'Source Sans Pro', sans-serif;
+    padding: 0;
     box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .main-btn {
