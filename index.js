@@ -18,6 +18,7 @@ menuBtn.addEventListener("click", () => {
 
 // Scroll to Home section
 const topbarLogo = document.querySelector(".topbar-logo-container")
+const sidebarToHome = document.querySelector(".sidebar-navigate-to-home")
 const toHomeBtnTopbar = document.querySelector(".to-home")
 const toHomeBtn = document.querySelector(".toHome")
 const homeContainer = document.querySelector(".home")
@@ -25,11 +26,14 @@ const homeContainer = document.querySelector(".home")
 toHomeBtn.addEventListener("click", () => {
     homeContainer.scrollIntoView({ behavior: "smooth", block: "start" })
 })
-toHomeBtnTopbar.addEventListener("click", () => {
+sidebarToHome.addEventListener("click", () => {
     homeContainer.scrollIntoView({ behavior: "smooth", block: "start" })
     sidebar.classList.remove('show')
     sidebar.classList.add('hidden')
     menuImage.src = `./images/svg/ham-menu.svg`;
+})
+toHomeBtnTopbar.addEventListener("click", () => {
+    homeContainer.scrollIntoView({ behavior: "smooth", block: "start" })
 })
 topbarLogo.addEventListener("click", () => {
     homeContainer.scrollIntoView({ behavior: "smooth", block: "start" })
@@ -38,55 +42,67 @@ topbarLogo.addEventListener("click", () => {
 
 // Scroll to About section
 const topbarAbout = document.querySelector(".to-about")
+const sidebarToAbout = document.querySelector(".sidebar-navigate-to-about")
 const aboutBtn = document.querySelector(".toAbout")
-const aboutBox = document.querySelector(".about")
+const aboutContainer = document.querySelector(".about")
 const interests = document.querySelector("#interests")
 const downArrow = document.querySelector(".down-arrow")
 
 aboutBtn.addEventListener("click", () => {
-    aboutBox.scrollIntoView({ behavior: "smooth", block: "start" })
+    aboutContainer.scrollIntoView({ behavior: "smooth", block: "start" })
 })
-downArrow.addEventListener("click", () => {
-    aboutBox.scrollIntoView({ behavior: "smooth", block: "start" })
-})
-
-topbarAbout.addEventListener("click", () => { 
-    aboutBox.scrollIntoView({ behavior: "smooth", block: "start" })
+sidebarToAbout.addEventListener("click", () => {
+    aboutContainer.scrollIntoView({ behavior: "smooth", block: "start" })
     sidebar.classList.remove('show')
     sidebar.classList.add('hidden')
     menuImage.src = `./images/svg/ham-menu.svg`;
+})
+downArrow.addEventListener("click", () => {
+    aboutContainer.scrollIntoView({ behavior: "smooth", block: "start" })
+})
+
+topbarAbout.addEventListener("click", () => { 
+    aboutContainer.scrollIntoView({ behavior: "smooth", block: "start" })
 })
 
 
 // Scroll to Projects section
 const topbarProjects = document.querySelector(".to-projects")
+const sidebarToProjects = document.querySelector(".sidebar-navigate-to-projects")
 const btnProjects = document.querySelector(".toProjects")
-const projectContainer = document.querySelector(".projects")
+const projectsContainer = document.querySelector(".projects")
 
 btnProjects.addEventListener("click", () => {
-    projectContainer.scrollIntoView({ behavior: "smooth", block: "start" })
+    projectsContainer.scrollIntoView({ behavior: "smooth", block: "start" })
 })
-topbarProjects.addEventListener("click", () => {
-    projectContainer.scrollIntoView({ behavior: "smooth", block: "start" })
+sidebarToProjects.addEventListener("click", () => {
+    projectsContainer.scrollIntoView({ behavior: "smooth", block: "start" })
     sidebar.classList.remove('show')
     sidebar.classList.add('hidden')
     menuImage.src = `./images/svg/ham-menu.svg`;
+})
+topbarProjects.addEventListener("click", () => {
+    projectsContainer.scrollIntoView({ behavior: "smooth", block: "start" })
 })
 
 
 // Scroll to Contact section
 const topbarContact = document.querySelector(".to-contact")
+const sidebarToContact = document.querySelector(".sidebar-navigate-to-contact")
 const btnContact = document.querySelector(".toContact")
-const contact = document.querySelector(".contact")
+const contactContainer = document.querySelector(".contact")
 
 btnContact.addEventListener("click", () => {
-    contact.scrollIntoView({ behavior: "smooth", block: "start" })
+    contactContainer.scrollIntoView({ behavior: "smooth", block: "start" })
 })
-topbarContact.addEventListener("click", () => {
-    contact.scrollIntoView({ behavior: "smooth", block: "start" })
+sidebarToContact.addEventListener("click", () => {
+    contactContainer.scrollIntoView({ behavior: "smooth", block: "start" })
     sidebar.classList.remove('show')
     sidebar.classList.add('hidden')
     menuImage.src = `./images/svg/ham-menu.svg`;
+})
+topbarContact.addEventListener("click", () => {
+    contactContainer.scrollIntoView({ behavior: "smooth", block: "start" })
 })
 
 

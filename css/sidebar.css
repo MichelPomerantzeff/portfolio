@@ -1,6 +1,6 @@
 .sidebar{
-    top: -40vh;
-    height: 40vh;
+    top: -285px;
+    height: 285px;
     width: 100vw;
     position: fixed;
     transition: .5s;
@@ -22,10 +22,10 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    font-size: 2rem;
+    font-size: 1.rem;
 }
 
-.sidebar-navigate-to{
+.sidebar-navigate-to-home, .sidebar-navigate-to-about, .sidebar-navigate-to-projects, .sidebar-navigate-to-contact{
     border: solid 1px #e4e1e1;
     width: 100%;
     text-align: center;
