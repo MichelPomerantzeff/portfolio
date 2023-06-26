@@ -41,7 +41,7 @@
   font-weight: 600;
 }
 
-.cv-link {
+.cv-link, .linkedin-link {
   color: var(--mainColor);
   font-weight: bold;
 }
