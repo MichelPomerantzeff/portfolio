@@ -115,7 +115,7 @@
                     </a>
                 </div>
                 <div title="resume" class="home-social">
-                    <a class="home-social-link" href="./pdf/cv.pdf" download="CV Michel Pomerantzeff">
+                    <a class="home-social-link" href="./pdf/cv.pdf" target="_blank" rel="noopener noreferrer">
                         <img class="home-social-img" src="./images/socials/cv.png" alt="CV image">
                     </a>
                 </div>
@@ -203,8 +203,9 @@
                 <!-- MOVIE APP -->
                 <div class="project">
 
-                    <div class="project-img">
-                        <img src="./images/project-images/movie.png" alt="movie-app Image">
+                    <div class="project-images">
+                        <img class="desktop" src="./images/project-images/tmdb.png" alt="movie-app Image">
+                        <img class="mobile" src="./images/project-images/tmdb-mobile.png" alt="movie-app Image">
                     </div>
 
                     <div class="project-details">
@@ -213,29 +214,32 @@
 
                         <div class="project-description">
                             <p>
-                                I re-created the IMDb website with a few extra changes of my own, 
-                                making it so the user is able not only to create their own watchlist but after watching a movie 
-                                they can add it to a list of movies that have been watched.
-                                 <!-- and add their own comments and rating. -->
+                                I re-created IMDb website preserving core features and adding new ones 
+                                such as a disable button to movies that have been added to a list, a 
+                                watched list, and versatile list filtering by movie, TV show and all entries.
                             </p>
                             <div class="tech-list">
                                 <span class="tech">ReactJs</span>
-                                <span class="tech">Redux</span>
-                                <span class="tech">Custom Hooks</span>
+                                <span class="tech">Redux Toolkit</span>
+                                <span class="tech">React Query</span>
                                 <span class="tech">Firebase</span>
                                 <span class="tech">TMDb API</span>
                             </div>
                         </div>
 
-                        <div class="project-buttons">
+                        <div class="project-icons">
 
                             <a href="https://tmdb-movieapp.netlify.app/" target="_blank" rel="noopener" rel="noreferrer">
-                                <button class="project-button"> Live Demo </button>
+                                <div title="Live demo" class="demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square project-link-icon"></i>
+                                </div>
                             </a>
     
                             <a href="https://github.com/MichelPomerantzeff/imdb-clone" target="_blank" rel="noopener"
                                 rel="noreferrer">
-                                <button class="project-button"> Github Repo </button>
+                                <div title="Github" class="repo">
+                                    <i class="fa-brands fa-github project-gh-icon"></i>
+                                </div>
                             </a>
     
                         </div>
@@ -246,8 +250,9 @@
                  <!-- E-COMMERCE -->
                 <div class="project">
 
-                    <div class="project-img">
-                        <img src="./images/project-images/ecommerce.png" alt="movie-app Image">
+                    <div class="project-images">
+                        <img class="desktop" src="./images/project-images/e-commerce.png" alt="movie-app Image">
+                        <img class="mobile" src="./images/project-images/e-commerce-mobile.png" alt="movie-app Image">
                     </div>
 
                     <div class="project-details">
@@ -256,37 +261,86 @@
 
                         <div class="project-description">
                             <p>
-                                A Fullstack E-Commerce website that allows users to create an account, log in, log out, 
-                                navigate through pages, add and manage items to cart easily, make card payments and check orders history.
+                                A Full-Stack e-commerce that allows users to create 
+                                authenticated accounts, manage cart items, execute 
+                                card payments, and keep track of their order history.
                             </p>
                             <div class="tech-list">
                                 <span class="tech">ReactJs</span>
-                                <span class="tech">Redux</span>
+                                <span class="tech">Redux Tollkit</span>
                                 <span class="tech">Firebase</span>
                                 <span class="tech">Express</span>
                                 <span class="tech">Stripe Api</span>
                             </div>
                         </div>
 
-                        <div class="project-buttons">
+                        <div class="project-icons">
 
                             <a href="https://theone-ecommerce.netlify.app/" target="_blank" rel="noopener" rel="noreferrer">
-                                <button class="project-button"> Live Demo </button>
+                                <div title="Live demo" class="demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square project-link-icon"></i>
+                                </div>
                             </a>
     
                             <a href="https://github.com/MichelPomerantzeff/Food-Ecommerce" target="_blank" rel="noopener" rel="noreferrer">
-                                <button class="project-button"> Github Repo </button>
+                                <div class="repo">
+                                    <i title="Github" class="fa-brands fa-github project-gh-icon"></i>
+                                </div>
                             </a>
     
                         </div>
                     </div>
                 </div>
 
+                <!-- WT Conttrutora -->
+                <div class="project">
+
+                    <div class="project-images">
+                        <img class="desktop" src="./images/project-images/wt.png" alt="LAPTOP">
+                        <img class="mobile" src="./images/project-images/wt-mobile.png" alt="MOBILE">
+                    </div>
+
+                    <div class="project-details">
+
+                        <h2 class="project-title">WT Projetos e Construções</h2>
+
+                        <div class="project-description">
+                            <p> The landing page of WT Projetos e Construções</p>
+                            <div class="tech-list">
+                                <span class="tech">ReactJs</span>
+                                <span class="tech">Redux Tollkit</span>
+                                <span class="tech">Material UI</span>
+                                <span class="tech">EmailJs</span>
+                                <span class="tech">Swiper</span>
+                            </div>
+                        </div>
+
+                        <div class="project-icons">
+
+                            <a href="https://wtconstruction.netlify.app/" target="_blank" rel="noopener"
+                                rel="noreferrer">
+                                <div title="Live demo" class="demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square project-link-icon"></i>
+                                </div>
+                            </a>
+                            <a title="Github" class="disabled" target="_blank" rel="noopener"
+                                rel="noreferrer">
+                                <div class="repo">
+                                    <i class="fa-brands fa-github project-gh-icon"></i>
+                                </div>
+                            </a>
+    
+                        </div>
+                        <span class="private-repo">Private repository</span>
+                    </div>
+                </div>
+
                 <!-- LINK SAVER -->
                 <div class="project">
 
-                    <div class="project-img">
-                        <img src="./images/project-images/link.png" alt="movie-app Image">
+                    <div class="project-images">
+                        <img class="desktop" src="./images/project-images/ls.png" alt="movie-app Image">
+                        <img class="mobile" src="./images/project-images/ls-mobile.png" alt="movie-app Image">
                     </div>
 
                     <div class="project-details">
@@ -304,55 +358,25 @@
                             </div>
                         </div>
 
-                        <div class="project-buttons">
+                        <div class="project-icons">
 
                             <a href="https://linksaver.netlify.app/" target="_blank" rel="noopener"
                               rel="noreferrer">
-                                <button class="project-button"> Live Demo </button>
+                                <div title="Live demo" class="demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square project-link-icon"></i>
+                                </div>
                             </a>
 
                             <a href="https://github.com/MichelPomerantzeff/linksaver" target="_blank" rel="noopener"
                                 rel="noreferrer">
-                                <button class="project-button"> Github Repo </button>
+                                <div title="Github" class="repo">
+                                    <i class="fa-brands fa-github project-gh-icon"></i>
+                                </div>
                             </a>
     
                         </div>
                     </div>
                 </div>
-                
-                <!-- Clock -->
-                <div class="project">
-
-                    <div class="project-img">
-                        <img src="./images/project-images/clock.png" alt="movie-app Image">
-                    </div>
-
-                    <div class="project-details">
-
-                        <h2 class="project-title">Clock App</h2>
-
-                        <div class="project-description">
-                            <p> A real time clock that includes stopwatch and countdown functions. </p>
-                            <div class="tech-list">
-                                <span class="tech">ReactJs</span>
-                            </div>
-                        </div>
-
-                        <div class="project-buttons">
-
-                            <a href="https://vite-clock-app.netlify.app" target="_blank" rel="noopener"
-                                rel="noreferrer">
-                                <button class="project-button"> Live Demo </button>
-                            </a>
-                            <a href="https://github.com/MichelPomerantzeff/Clock-app" target="_blank" rel="noopener"
-                                rel="noreferrer">
-                                <button class="project-button"> Github Repo </button>
-                            </a>
-    
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </section>
         <!-- PROJECTS SECTION ENDS HERE -->
