@@ -37,6 +37,10 @@
     bottom: 10%;
 }
 
+.project:nth-child(even) .mobile{
+    left: 0;
+}
+
 .project-details {
     background: rgb(236, 235, 235);
     display: flex;

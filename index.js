@@ -110,10 +110,3 @@ topbarContact.addEventListener("click", () => {
 const home = document.querySelector(".home")
 const upArrow = document.querySelector(".upArrow")
 const homeBtn = document.querySelector(".homeBtn")
-
-upArrow.addEventListener("click", () => {
-    home.scrollIntoView({ behavior: "smooth", block: "start" })
-})
-homeBtn.addEventListener("click", () => {
-    home.scrollIntoView({ behavior: "smooth", block: "start" })
-})
