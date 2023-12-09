@@ -9,7 +9,7 @@ function sendEmail(event) {
 
     Swal.fire({
         title: "Email Sent!",
-        text: "Your message has been sent successfully. We'll get back to you soon!",
+        text: "Your message has been sent successfully. I'll get back to you soon!",
         icon: "success",
         customClass: {
             confirmButton: 'main-btn'
