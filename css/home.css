@@ -67,7 +67,7 @@
     font-size: 3.5rem;
     cursor: pointer;
     animation: bounceInDown 1s ease-out 1.6s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: backwards;
     margin-top: 150px;
 }
 
